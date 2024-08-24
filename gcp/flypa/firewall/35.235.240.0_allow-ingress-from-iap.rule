@@ -1,0 +1,17 @@
+allowed:
+- IPProtocol: all
+creationTimestamp: '2023-03-22T06:50:23.806-07:00'
+description: ''
+direction: INGRESS
+disabled: false
+id: '8117891030440130928'
+kind: compute#firewall
+logConfig:
+  enable: true
+  metadata: INCLUDE_ALL_METADATA
+name: allow-ingress-from-iap
+network: https://www.googleapis.com/compute/v1/projects/flypa-tw-testing/global/networks/flypa-tw-testing-vpc
+priority: 1000
+selfLink: https://www.googleapis.com/compute/v1/projects/flypa-tw-testing/global/firewalls/allow-ingress-from-iap
+sourceRanges:
+- 35.235.240.0/20
