@@ -1,0 +1,124 @@
+{
+  "apiVersion": "serving.knative.dev/v1",
+  "kind": "Service",
+  "metadata": {
+    "annotations": {
+      "run.googleapis.com/client-name": "gcloud",
+      "run.googleapis.com/client-version": "488.0.0",
+      "run.googleapis.com/ingress": "all",
+      "run.googleapis.com/ingress-status": "all",
+      "run.googleapis.com/operation-id": "d6ff3dfe-aac9-46af-9c3c-074fb627f01e",
+      "run.googleapis.com/urls": "[\"https://cola-home-818100562173.asia-east1.run.app\",\"https://cola-home-jgwm4iw2lq-de.a.run.app\"]",
+      "serving.knative.dev/creator": "818100562173@cloudbuild.gserviceaccount.com",
+      "serving.knative.dev/lastModifier": "818100562173@cloudbuild.gserviceaccount.com"
+    },
+    "creationTimestamp": "2024-07-08T02:48:47.694026Z",
+    "generation": 11,
+    "labels": {
+      "cloud.googleapis.com/location": "asia-east1"
+    },
+    "name": "cola-home",
+    "namespace": "818100562173",
+    "resourceVersion": "AAYgVrkCcKA",
+    "selfLink": "/apis/serving.knative.dev/v1/namespaces/818100562173/services/cola-home",
+    "uid": "6197932f-5459-4c45-8ce2-109a93ddc049"
+  },
+  "spec": {
+    "template": {
+      "metadata": {
+        "annotations": {
+          "autoscaling.knative.dev/maxScale": "100",
+          "run.googleapis.com/client-name": "gcloud",
+          "run.googleapis.com/client-version": "488.0.0",
+          "run.googleapis.com/network-interfaces": "[{\"network\":\"flypa-tw-testing-vpc\",\"subnetwork\":\"flypa-tw-testing-vpc-network\"}]",
+          "run.googleapis.com/startup-cpu-boost": "true",
+          "run.googleapis.com/vpc-access-egress": "private-ranges-only"
+        },
+        "labels": {
+          "client.knative.dev/nonce": "fiunxbmlfi",
+          "run.googleapis.com/startupProbeType": "Default"
+        }
+      },
+      "spec": {
+        "containerConcurrency": 80,
+        "containers": [
+          {
+            "env": [
+              {
+                "name": "NODE_ENV",
+                "value": "development"
+              },
+              {
+                "name": "HOST",
+                "value": "0.0.0.0"
+              }
+            ],
+            "image": "asia-east1-docker.pkg.dev/flypa-tw-testing/flypa-gke-demo/cola-home:f9dab3158b39e95e5a37e4dc5f81804aabd8c129",
+            "name": "cola-home-1",
+            "ports": [
+              {
+                "containerPort": 8080,
+                "name": "http1"
+              }
+            ],
+            "resources": {
+              "limits": {
+                "cpu": "1000m",
+                "memory": "512Mi"
+              }
+            },
+            "startupProbe": {
+              "failureThreshold": 1,
+              "periodSeconds": 240,
+              "tcpSocket": {
+                "port": 8080
+              },
+              "timeoutSeconds": 240
+            }
+          }
+        ],
+        "serviceAccountName": "818100562173-compute@developer.gserviceaccount.com",
+        "timeoutSeconds": 300
+      }
+    },
+    "traffic": [
+      {
+        "latestRevision": true,
+        "percent": 100
+      }
+    ]
+  },
+  "status": {
+    "address": {
+      "url": "https://cola-home-jgwm4iw2lq-de.a.run.app"
+    },
+    "conditions": [
+      {
+        "lastTransitionTime": "2024-08-23T09:51:43.485088Z",
+        "status": "True",
+        "type": "Ready"
+      },
+      {
+        "lastTransitionTime": "2024-07-08T02:48:47.759242Z",
+        "status": "True",
+        "type": "ConfigurationsReady"
+      },
+      {
+        "lastTransitionTime": "2024-08-23T09:51:43.459791Z",
+        "status": "True",
+        "type": "RoutesReady"
+      }
+    ],
+    "latestCreatedRevisionName": "cola-home-00011-k6l",
+    "latestReadyRevisionName": "cola-home-00011-k6l",
+    "observedGeneration": 11,
+    "traffic": [
+      {
+        "latestRevision": true,
+        "percent": 100,
+        "revisionName": "cola-home-00011-k6l"
+      }
+    ],
+    "url": "https://cola-home-jgwm4iw2lq-de.a.run.app"
+  }
+}

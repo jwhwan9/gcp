@@ -1,0 +1,133 @@
+{
+  "apiVersion": "serving.knative.dev/v1",
+  "kind": "Service",
+  "metadata": {
+    "annotations": {
+      "run.googleapis.com/client-name": "gcloud",
+      "run.googleapis.com/client-version": "487.0.0",
+      "run.googleapis.com/ingress": "all",
+      "run.googleapis.com/ingress-status": "all",
+      "run.googleapis.com/operation-id": "8c40b341-93fb-466c-85b0-977c66b3ca75",
+      "run.googleapis.com/urls": "[\"https://cola-itinerary-818100562173.asia-east1.run.app\",\"https://cola-itinerary-jgwm4iw2lq-de.a.run.app\"]",
+      "serving.knative.dev/creator": "818100562173@cloudbuild.gserviceaccount.com",
+      "serving.knative.dev/lastModifier": "818100562173@cloudbuild.gserviceaccount.com"
+    },
+    "creationTimestamp": "2024-05-03T04:37:00.281203Z",
+    "generation": 56,
+    "labels": {
+      "cloud.googleapis.com/location": "asia-east1"
+    },
+    "name": "cola-itinerary",
+    "namespace": "818100562173",
+    "resourceVersion": "AAYgPCWPg4U",
+    "selfLink": "/apis/serving.knative.dev/v1/namespaces/818100562173/services/cola-itinerary",
+    "uid": "73d94a2b-e53a-4b07-a6df-dc53d5a9ec90"
+  },
+  "spec": {
+    "template": {
+      "metadata": {
+        "annotations": {
+          "autoscaling.knative.dev/maxScale": "5",
+          "run.googleapis.com/client-name": "gcloud",
+          "run.googleapis.com/client-version": "487.0.0",
+          "run.googleapis.com/network-interfaces": "[{\"network\":\"flypa-tw-testing-vpc\",\"subnetwork\":\"flypa-tw-testing-vpc-network\",\"tags\":[\"cola-itinerary\"]}]",
+          "run.googleapis.com/startup-cpu-boost": "true",
+          "run.googleapis.com/vpc-access-egress": "all-traffic"
+        },
+        "labels": {
+          "client.knative.dev/nonce": "jnfqkzhqzz",
+          "run.googleapis.com/startupProbeType": "Default"
+        }
+      },
+      "spec": {
+        "containerConcurrency": 80,
+        "containers": [
+          {
+            "env": [
+              {
+                "name": "NODE_ENV",
+                "value": "development"
+              },
+              {
+                "name": "HOST",
+                "value": "0.0.0.0"
+              }
+            ],
+            "image": "asia-east1-docker.pkg.dev/flypa-tw-testing/flypa-gke-demo/cola-itinerary:f3e591058e3e7923d6bfaf5c51c7d8e0a187f217",
+            "name": "cola-itinerary-1",
+            "ports": [
+              {
+                "containerPort": 3000,
+                "name": "http1"
+              }
+            ],
+            "resources": {
+              "limits": {
+                "cpu": "1000m",
+                "memory": "512Mi"
+              }
+            },
+            "startupProbe": {
+              "failureThreshold": 1,
+              "periodSeconds": 240,
+              "tcpSocket": {
+                "port": 3000
+              },
+              "timeoutSeconds": 240
+            }
+          }
+        ],
+        "serviceAccountName": "cola-itinerary@flypa-tw-testing.iam.gserviceaccount.com",
+        "timeoutSeconds": 300
+      }
+    },
+    "traffic": [
+      {
+        "revisionName": "cola-itinerary-00027-8wm",
+        "tag": "green"
+      },
+      {
+        "latestRevision": true,
+        "percent": 100
+      }
+    ]
+  },
+  "status": {
+    "address": {
+      "url": "https://cola-itinerary-jgwm4iw2lq-de.a.run.app"
+    },
+    "conditions": [
+      {
+        "lastTransitionTime": "2024-08-22T02:09:20.552837Z",
+        "status": "True",
+        "type": "Ready"
+      },
+      {
+        "lastTransitionTime": "2024-05-03T04:37:00.386070Z",
+        "status": "True",
+        "type": "ConfigurationsReady"
+      },
+      {
+        "lastTransitionTime": "2024-08-22T02:09:20.522755Z",
+        "status": "True",
+        "type": "RoutesReady"
+      }
+    ],
+    "latestCreatedRevisionName": "cola-itinerary-00055-7lj",
+    "latestReadyRevisionName": "cola-itinerary-00055-7lj",
+    "observedGeneration": 56,
+    "traffic": [
+      {
+        "revisionName": "cola-itinerary-00027-8wm",
+        "tag": "green",
+        "url": "https://green---cola-itinerary-jgwm4iw2lq-de.a.run.app"
+      },
+      {
+        "latestRevision": true,
+        "percent": 100,
+        "revisionName": "cola-itinerary-00055-7lj"
+      }
+    ],
+    "url": "https://cola-itinerary-jgwm4iw2lq-de.a.run.app"
+  }
+}

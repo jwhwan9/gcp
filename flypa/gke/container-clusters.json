@@ -1,0 +1,219 @@
+[
+  {
+    "addonsConfig": {
+      "dnsCacheConfig": {
+        "enabled": true
+      },
+      "gcePersistentDiskCsiDriverConfig": {
+        "enabled": true
+      },
+      "gcpFilestoreCsiDriverConfig": {
+        "enabled": true
+      },
+      "gcsFuseCsiDriverConfig": {
+        "enabled": true
+      },
+      "horizontalPodAutoscaling": {},
+      "httpLoadBalancing": {},
+      "kubernetesDashboard": {
+        "disabled": true
+      },
+      "networkPolicyConfig": {
+        "disabled": true
+      }
+    },
+    "authenticatorGroupsConfig": {},
+    "autopilot": {
+      "enabled": true
+    },
+    "autoscaling": {
+      "autoprovisioningNodePoolDefaults": {
+        "imageType": "COS_CONTAINERD",
+        "management": {
+          "autoRepair": true,
+          "autoUpgrade": true
+        },
+        "oauthScopes": [
+          "https://www.googleapis.com/auth/devstorage.read_only",
+          "https://www.googleapis.com/auth/logging.write",
+          "https://www.googleapis.com/auth/monitoring",
+          "https://www.googleapis.com/auth/service.management.readonly",
+          "https://www.googleapis.com/auth/servicecontrol",
+          "https://www.googleapis.com/auth/trace.append"
+        ],
+        "serviceAccount": "default",
+        "upgradeSettings": {
+          "maxSurge": 1,
+          "strategy": "SURGE"
+        }
+      },
+      "autoscalingProfile": "OPTIMIZE_UTILIZATION",
+      "enableNodeAutoprovisioning": true,
+      "resourceLimits": [
+        {
+          "maximum": "1000000000",
+          "resourceType": "cpu"
+        },
+        {
+          "maximum": "1000000000",
+          "resourceType": "memory"
+        },
+        {
+          "maximum": "1000000000",
+          "resourceType": "nvidia-tesla-t4"
+        },
+        {
+          "maximum": "1000000000",
+          "resourceType": "nvidia-tesla-a100"
+        }
+      ]
+    },
+    "binaryAuthorization": {
+      "evaluationMode": "DISABLED"
+    },
+    "clusterIpv4Cidr": "10.1.16.0/20",
+    "createTime": "2023-02-13T08:44:49+00:00",
+    "currentMasterVersion": "1.29.7-gke.1104000",
+    "currentNodeVersion": "",
+    "databaseEncryption": {
+      "state": "DECRYPTED"
+    },
+    "defaultMaxPodsConstraint": {
+      "maxPodsPerNode": "110"
+    },
+    "endpoint": "35.221.145.97",
+    "enterpriseConfig": {
+      "clusterTier": "STANDARD"
+    },
+    "etag": "bc19d488-3f1c-4d92-89fd-55284eb469f2",
+    "id": "7d9daba2640642189bda3c121e2aff4598d74592571e4644bcfb995ffbf76092",
+    "initialClusterVersion": "1.24.8-gke.2000",
+    "ipAllocationPolicy": {
+      "clusterIpv4Cidr": "10.1.16.0/20",
+      "clusterIpv4CidrBlock": "10.1.16.0/20",
+      "clusterSecondaryRangeName": "gke-flypa-tw-testing-gke-pods-7d9daba2",
+      "podCidrOverprovisionConfig": {},
+      "servicesIpv4Cidr": "10.1.32.0/20",
+      "servicesIpv4CidrBlock": "10.1.32.0/20",
+      "servicesSecondaryRangeName": "gke-flypa-tw-testing-gke-services-7d9daba2",
+      "stackType": "IPV4",
+      "useIpAliases": true
+    },
+    "labelFingerprint": "220cf343",
+    "legacyAbac": {},
+    "location": "asia-east1",
+    "locations": [
+      "asia-east1-a",
+      "asia-east1-b",
+      "asia-east1-c"
+    ],
+    "loggingConfig": {
+      "componentConfig": {
+        "enableComponents": [
+          "SYSTEM_COMPONENTS",
+          "WORKLOADS"
+        ]
+      }
+    },
+    "loggingService": "logging.googleapis.com/kubernetes",
+    "maintenancePolicy": {
+      "resourceVersion": "e3b0c442"
+    },
+    "masterAuth": {
+      "clusterCaCertificate": "LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUVMVENDQXBXZ0F3SUJBZ0lSQVBkSnAwQkp0SkxnVXkwZWViS0o3N3N3RFFZSktvWklodmNOQVFFTEJRQXcKTHpFdE1Dc0dBMVVFQXhNa05EZzRNemt4TkdVdE5qRmpNUzAwWldZNUxXRm1NMlF0T1RSa05tTmhOV1EzWW1JdwpNQ0FYRFRJek1ESXhNekEzTkRRMU1Gb1lEekl3TlRNd01qQTFNRGcwTkRVd1dqQXZNUzB3S3dZRFZRUURFeVEwCk9EZ3pPVEUwWlMwMk1XTXhMVFJsWmprdFlXWXpaQzA1TkdRMlkyRTFaRGRpWWpBd2dnR2lNQTBHQ1NxR1NJYjMKRFFFQkFRVUFBNElCandBd2dnR0tBb0lCZ1FEMDYwSTRvODBUVTU2YjIzNnFSdEN4U28wbitMTGdFV1E2REpQQQpGNURqTEhKS1FrbFJQbVZndUxuYWN2Y3JlYjJScUdkWmVYbTJMa2Z1aDZjb3E2ZTRiaVlkQ3Z3VnNFVkFyUWRPCnpPaWlBMHpnRDlBRUZiR2ZDZ0o2N1NCdUM2OG9UK3NHUEdNRXF4NWQ2c3RVcjk4MGVPam5XeDV1bnNuT0l1ZmgKN1RpRmpPWGVic1lmMjc4K1MwS2tLdFdhN0pkcjdjaURsWTRiM0VybmdaZ09RbWY0UERvWER5NnB3VlQ5YjFDNwo3VHRITGFvUFMyM0VlWlJlY0wvQ1QrWUpCeUY5Z3YxY2NKRmt3eVRncDh4QWtPUUdPT2s3N2NpdENBUjYxODdQClgrYXVuUlpFejZGdFd4QXgwT25wNCs1TlBxakJoQktSZ3Z5RnBQdXIwdHJUTGFTU2swNW5yeFN3K2MxOTZQb0kKUlJlbFVMUVFvZTRxTmJDUStvZmVoQjdPbzgrYXREcjdXV3R6Y1Vya2ludU5qQml2bE15TCtjdzlsVDN1Ym1xVAp5SlhTOERmeEFURzBLNGVuV0E3cXJnSEN2RGVwd2JBZVJzcjlPU2piMmVoTVp3eFFPU3hsSVN1UEhZVjYzY1VMCnJ5bHh6SFBOeGVuTDYzMTdhcW1lM2FGazlTY0NBd0VBQWFOQ01FQXdEZ1lEVlIwUEFRSC9CQVFEQWdJRU1BOEcKQTFVZEV3RUIvd1FGTUFNQkFmOHdIUVlEVlIwT0JCWUVGQnhEcTZxaWtWQkVRZWRiWUhkQmR4aUNEaksvTUEwRwpDU3FHU0liM0RRRUJDd1VBQTRJQmdRQ0p6dHRTbGs5eU1MdFRnSHdQUlBqWGdTZW1PLzg0WVlvUUhIWkdQOE5nClVjenhyN0QrdUZHOXNxVGFXR3dlaUIzOUZHdzNXSkhmWjRxd2tnMWdNVVBsY0liTUl5Tm5wNjBIU2xjNllsU1QKVkNnQXJXdmJra1Z4MURXaDlWWGEwRnd3TXZzaDhxUWFVSjEzOGxmYXhhS3Q2THRmRFVjQ2Y3UWxKbFJheU5NRgpTV3JmMHlYd3VWVmFSQlpNaEdkL1Y5U05DbWxhRjhVbEVNUFMwYVFMSUxnbEV1ZW42OXhMMnBzOWRwdk9oVGVGCmVqUTA3MmR1dk1iOWlaR29VWWxzaHNialVkRSt3V2V1NmY5SkdvMjFtOFlKTGdyYWQ1OTluVS8zQzh1bUpJeXYKbWw4azUydnkzb1dNem5zUXNmd0NUUGlhNEFheHdsZjE2SlIvOEYwYXY2M2dVN3hDT3BoRUEwMnNvZnBHamlsYwpTeldXZHJ2aTJ6YlcrSlRRWVBtYnMyeGF0Ti9iU0dVajZuT1pHZkZzZ2Z6Q1luMDRjdWxVSy9SNzhxNE9NWUx0CnVyZS9wdEUwZmt4UlcvQ0J4NmU2elhualM4UzAxZFZhSVU3Smdyb2IrMXZNZm83RUQzSXVQSHdUKy9Td3VJTDEKMlhHLzlyUk56ay8zOUJaZE02ZkVQS2s9Ci0tLS0tRU5EIENFUlRJRklDQVRFLS0tLS0K"
+    },
+    "masterAuthorizedNetworksConfig": {
+      "gcpPublicCidrsAccessEnabled": false
+    },
+    "monitoringConfig": {
+      "advancedDatapathObservabilityConfig": {},
+      "componentConfig": {
+        "enableComponents": [
+          "CONTROLLER_MANAGER",
+          "DAEMONSET",
+          "DEPLOYMENT",
+          "HPA",
+          "POD",
+          "SCHEDULER",
+          "STATEFULSET",
+          "STORAGE",
+          "SYSTEM_COMPONENTS"
+        ]
+      },
+      "managedPrometheusConfig": {
+        "enabled": true
+      }
+    },
+    "monitoringService": "monitoring.googleapis.com/kubernetes",
+    "name": "flypa-tw-testing-gke",
+    "network": "flypa-tw-testing-vpc",
+    "networkConfig": {
+      "datapathProvider": "ADVANCED_DATAPATH",
+      "defaultSnatStatus": {},
+      "enableIntraNodeVisibility": true,
+      "network": "projects/flypa-tw-testing/global/networks/flypa-tw-testing-vpc",
+      "serviceExternalIpsConfig": {},
+      "subnetwork": "projects/flypa-tw-testing/regions/asia-east1/subnetworks/flypa-tw-testing-vpc-network"
+    },
+    "nodePoolAutoConfig": {
+      "networkTags": {
+        "tags": [
+          "flypa-tw-testing-gke"
+        ]
+      }
+    },
+    "nodePoolDefaults": {
+      "nodeConfigDefaults": {
+        "loggingConfig": {
+          "variantConfig": {
+            "variant": "DEFAULT"
+          }
+        }
+      }
+    },
+    "notificationConfig": {
+      "pubsub": {
+        "enabled": true,
+        "filter": {
+          "eventType": [
+            "UPGRADE_AVAILABLE_EVENT",
+            "UPGRADE_EVENT",
+            "SECURITY_BULLETIN_EVENT"
+          ]
+        },
+        "topic": "projects/flypa-tw-testing/topics/cluster-notifier"
+      }
+    },
+    "privateClusterConfig": {
+      "enablePrivateNodes": true,
+      "masterIpv4CidrBlock": "10.1.240.0/28",
+      "peeringName": "gke-n45065e13e35774cc845-a8d2-9313-peer",
+      "privateEndpoint": "10.1.240.2",
+      "publicEndpoint": "35.221.145.97"
+    },
+    "releaseChannel": {
+      "channel": "REGULAR"
+    },
+    "resourceLabels": {
+      "gkename": "flypa-tw-testing-gke"
+    },
+    "securityPostureConfig": {
+      "mode": "BASIC",
+      "vulnerabilityMode": "VULNERABILITY_BASIC"
+    },
+    "selfLink": "https://container.googleapis.com/v1/projects/flypa-tw-testing/locations/asia-east1/clusters/flypa-tw-testing-gke",
+    "servicesIpv4Cidr": "10.1.32.0/20",
+    "shieldedNodes": {
+      "enabled": true
+    },
+    "status": "RUNNING",
+    "subnetwork": "flypa-tw-testing-vpc-network",
+    "verticalPodAutoscaling": {
+      "enabled": true
+    },
+    "workloadIdentityConfig": {
+      "workloadPool": "flypa-tw-testing.svc.id.goog"
+    },
+    "zone": "asia-east1"
+  }
+]

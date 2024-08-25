@@ -1,0 +1,23 @@
+> gcloud container clusters list --format=json > container-clusters.json
+
+> gcloud container clusters describe flypa-tw-testing-gke --zone=asia-east1  --format=json > clusters-describe.json
+
+1. 查詢叢集的 Workload Identity 設定
+> gcloud container clusters describe flypa-tw-testing-gke --zone=asia-east1  --format="value(workloadIdentityConfig)"
+
+這個指令可以查看叢集是否有啟用 Workload Identity,以及相關設定。Workload Identity 可以讓 GKE Pod 直接存取 GCP 服務,而不需要使用 Service Account Key,提高安全性。
+
+2. 查詢叢集的 Master Auth 設定
+> gcloud container clusters describe flypa-tw-testing-gke --zone=asia-east1  --format="value(masterAuth)"
+
+3.查詢叢集的 Shielded Nodes 設定
+> gcloud container clusters describe flypa-tw-testing-gke --zone=asia-east1  --format="value(shieldedNodes)"
+
+4.查詢叢集的 Binary Authorization 設定
+> gcloud container clusters describe flypa-tw-testing-gke --zone=asia-east1  --format="value(binaryAuthorization)"
+這個指令可以查看叢集是否有啟用 Binary Authorization,以及相關設定。Binary Authorization 可以在部署前驗證容器映像檔,確保只有經過簽署的映像檔才能部署到叢集。
+
+
+--zone=asia-east1 --cluster=flypa-tw-testing-gke
+
+

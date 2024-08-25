@@ -1,0 +1,1 @@
+> gcloud logging read --format=json > logging-read.json

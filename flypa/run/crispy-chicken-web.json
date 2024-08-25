@@ -1,0 +1,131 @@
+{
+  "apiVersion": "serving.knative.dev/v1",
+  "kind": "Service",
+  "metadata": {
+    "annotations": {
+      "run.googleapis.com/client-name": "gcloud",
+      "run.googleapis.com/client-version": "485.0.0",
+      "run.googleapis.com/ingress": "all",
+      "run.googleapis.com/ingress-status": "all",
+      "run.googleapis.com/operation-id": "150355a3-853a-4a38-baf3-b0420befc112",
+      "run.googleapis.com/urls": "[\"https://crispy-chicken-web-818100562173.asia-east1.run.app\",\"https://crispy-chicken-web-jgwm4iw2lq-de.a.run.app\"]",
+      "serving.knative.dev/creator": "818100562173@cloudbuild.gserviceaccount.com",
+      "serving.knative.dev/lastModifier": "818100562173@cloudbuild.gserviceaccount.com"
+    },
+    "creationTimestamp": "2024-01-24T01:16:47.504647Z",
+    "generation": 114,
+    "labels": {
+      "cloud.googleapis.com/location": "asia-east1"
+    },
+    "name": "crispy-chicken-web",
+    "namespace": "818100562173",
+    "resourceVersion": "AAYe6ZokCeA",
+    "selfLink": "/apis/serving.knative.dev/v1/namespaces/818100562173/services/crispy-chicken-web",
+    "uid": "3a75a3a8-8265-469a-a46c-44d502839f35"
+  },
+  "spec": {
+    "template": {
+      "metadata": {
+        "annotations": {
+          "autoscaling.knative.dev/maxScale": "5",
+          "run.googleapis.com/client-name": "gcloud",
+          "run.googleapis.com/client-version": "485.0.0",
+          "run.googleapis.com/startup-cpu-boost": "true"
+        },
+        "labels": {
+          "client.knative.dev/nonce": "jucalsqoam",
+          "run.googleapis.com/startupProbeType": "Default"
+        }
+      },
+      "spec": {
+        "containerConcurrency": 80,
+        "containers": [
+          {
+            "env": [
+              {
+                "name": "NODE_ENV",
+                "value": "development"
+              },
+              {
+                "name": "HOST",
+                "value": "0.0.0.0"
+              }
+            ],
+            "image": "asia-east1-docker.pkg.dev/flypa-tw-testing/flypa-gke-demo/crispy-chicken-web:a6c4608db396fd6d5d2e63288c3e7d08aa9226da",
+            "livenessProbe": {
+              "failureThreshold": 3,
+              "httpGet": {
+                "path": "/",
+                "port": 8888
+              },
+              "periodSeconds": 10,
+              "timeoutSeconds": 1
+            },
+            "name": "crispy-chicken-web-1",
+            "ports": [
+              {
+                "containerPort": 8888,
+                "name": "http1"
+              }
+            ],
+            "resources": {
+              "limits": {
+                "cpu": "1000m",
+                "memory": "512Mi"
+              }
+            },
+            "startupProbe": {
+              "failureThreshold": 1,
+              "periodSeconds": 240,
+              "tcpSocket": {
+                "port": 8888
+              },
+              "timeoutSeconds": 240
+            }
+          }
+        ],
+        "serviceAccountName": "crispy-chicken-web@flypa-tw-testing.iam.gserviceaccount.com",
+        "timeoutSeconds": 300
+      }
+    },
+    "traffic": [
+      {
+        "latestRevision": true,
+        "percent": 100
+      }
+    ]
+  },
+  "status": {
+    "address": {
+      "url": "https://crispy-chicken-web-jgwm4iw2lq-de.a.run.app"
+    },
+    "conditions": [
+      {
+        "lastTransitionTime": "2024-08-05T06:15:22.530272Z",
+        "status": "True",
+        "type": "Ready"
+      },
+      {
+        "lastTransitionTime": "2024-01-24T01:16:47.607781Z",
+        "status": "True",
+        "type": "ConfigurationsReady"
+      },
+      {
+        "lastTransitionTime": "2024-08-05T06:15:22.504148Z",
+        "status": "True",
+        "type": "RoutesReady"
+      }
+    ],
+    "latestCreatedRevisionName": "crispy-chicken-web-00114-8ts",
+    "latestReadyRevisionName": "crispy-chicken-web-00114-8ts",
+    "observedGeneration": 114,
+    "traffic": [
+      {
+        "latestRevision": true,
+        "percent": 100,
+        "revisionName": "crispy-chicken-web-00114-8ts"
+      }
+    ],
+    "url": "https://crispy-chicken-web-jgwm4iw2lq-de.a.run.app"
+  }
+}

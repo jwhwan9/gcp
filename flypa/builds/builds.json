@@ -1,0 +1,2244 @@
+[
+  {
+    "artifacts": {
+      "images": [
+        "asia.gcr.io/flypa-tw-testing/flypa-dashboard-api-test-ci:928eab09858bc4f2a428619cc051d7b45178662e"
+      ]
+    },
+    "createTime": "2023-02-15T13:42:01.099304070Z",
+    "failureInfo": {
+      "detail": "Build step failure: build step 0 \"gcr.io/cloud-builders/docker\" failed: step exited with non-zero status: 1",
+      "type": "USER_BUILD_STEP"
+    },
+    "finishTime": "2023-02-15T13:42:22.029055912Z",
+    "id": "3cb71579-f72b-459e-9d74-9974f7254d35",
+    "images": [
+      "asia.gcr.io/flypa-tw-testing/flypa-dashboard-api-test-ci:928eab09858bc4f2a428619cc051d7b45178662e"
+    ],
+    "logUrl": "https://console.cloud.google.com/cloud-build/builds/3cb71579-f72b-459e-9d74-9974f7254d35?project=818100562173",
+    "logsBucket": "gs://818100562173.cloudbuild-logs.googleusercontent.com",
+    "name": "projects/818100562173/locations/global/builds/3cb71579-f72b-459e-9d74-9974f7254d35",
+    "options": {
+      "logging": "LEGACY",
+      "pool": {}
+    },
+    "projectId": "flypa-tw-testing",
+    "queueTtl": "3600s",
+    "results": {
+      "buildStepImages": [
+        "sha256:e47ccf06f182a0e869ea8fb48a134dbfea1940a274b0c06bc74c39ecfffa29e4"
+      ],
+      "buildStepOutputs": [
+        ""
+      ]
+    },
+    "source": {
+      "storageSource": {
+        "bucket": "flypa-tw-testing_cloudbuild",
+        "generation": "1676468520281902",
+        "object": "source/1676468518.948099-903f182e27bc4caab744095f8907458b.tgz"
+      }
+    },
+    "sourceProvenance": {
+      "fileHashes": {
+        "gs://flypa-tw-testing_cloudbuild/source/1676468518.948099-903f182e27bc4caab744095f8907458b.tgz#1676468520281902": {
+          "fileHash": [
+            {
+              "type": "MD5",
+              "value": "y85cOG0UDCPUc52NniSN8g=="
+            }
+          ]
+        }
+      },
+      "resolvedStorageSource": {
+        "bucket": "flypa-tw-testing_cloudbuild",
+        "generation": "1676468520281902",
+        "object": "source/1676468518.948099-903f182e27bc4caab744095f8907458b.tgz"
+      }
+    },
+    "startTime": "2023-02-15T13:42:01.919189694Z",
+    "status": "FAILURE",
+    "steps": [
+      {
+        "args": [
+          "build",
+          "--network",
+          "cloudbuild",
+          "--no-cache",
+          "-t",
+          "asia.gcr.io/flypa-tw-testing/flypa-dashboard-api-test-ci:928eab09858bc4f2a428619cc051d7b45178662e",
+          "."
+        ],
+        "exitCode": 1,
+        "name": "gcr.io/cloud-builders/docker",
+        "pullTiming": {
+          "endTime": "2023-02-15T13:42:14.593545608Z",
+          "startTime": "2023-02-15T13:42:14.581614591Z"
+        },
+        "status": "FAILURE",
+        "timing": {
+          "endTime": "2023-02-15T13:42:21.529330207Z",
+          "startTime": "2023-02-15T13:42:14.581614591Z"
+        }
+      }
+    ],
+    "timeout": "3600s",
+    "timing": {
+      "BUILD": {
+        "endTime": "2023-02-15T13:42:21.529436019Z",
+        "startTime": "2023-02-15T13:42:13.882289403Z"
+      },
+      "FETCHSOURCE": {
+        "endTime": "2023-02-15T13:42:13.882196762Z",
+        "startTime": "2023-02-15T13:42:02.413976183Z"
+      }
+    }
+  },
+  {
+    "artifacts": {
+      "images": [
+        "asia-east1-docker.pkg.dev/flypa-tw-testing/flypa-dashboard-api/flypa-dashboard-api:a98331e"
+      ]
+    },
+    "createTime": "2023-02-15T13:07:08.151998153Z",
+    "failureInfo": {
+      "detail": "Build step failure: build step 0 \"gcr.io/cloud-builders/docker\" failed: step exited with non-zero status: 1",
+      "type": "USER_BUILD_STEP"
+    },
+    "finishTime": "2023-02-15T13:07:31.492887232Z",
+    "id": "230ef078-e637-4fde-936b-84d0cc059927",
+    "images": [
+      "asia-east1-docker.pkg.dev/flypa-tw-testing/flypa-dashboard-api/flypa-dashboard-api:a98331e"
+    ],
+    "logUrl": "https://console.cloud.google.com/cloud-build/builds/230ef078-e637-4fde-936b-84d0cc059927?project=818100562173",
+    "logsBucket": "gs://818100562173.cloudbuild-logs.googleusercontent.com",
+    "name": "projects/818100562173/locations/global/builds/230ef078-e637-4fde-936b-84d0cc059927",
+    "options": {
+      "logging": "LEGACY",
+      "pool": {}
+    },
+    "projectId": "flypa-tw-testing",
+    "queueTtl": "3600s",
+    "results": {
+      "buildStepImages": [
+        "sha256:e47ccf06f182a0e869ea8fb48a134dbfea1940a274b0c06bc74c39ecfffa29e4"
+      ],
+      "buildStepOutputs": [
+        ""
+      ]
+    },
+    "source": {
+      "storageSource": {
+        "bucket": "flypa-tw-testing_cloudbuild",
+        "generation": "1676466427746342",
+        "object": "source/1676466426.14721-88864cb4e3624520876bbb43526307ea.tgz"
+      }
+    },
+    "sourceProvenance": {
+      "fileHashes": {
+        "gs://flypa-tw-testing_cloudbuild/source/1676466426.14721-88864cb4e3624520876bbb43526307ea.tgz#1676466427746342": {
+          "fileHash": [
+            {
+              "type": "MD5",
+              "value": "DoXeqV2uguzXrqPxxy7PBA=="
+            }
+          ]
+        }
+      },
+      "resolvedStorageSource": {
+        "bucket": "flypa-tw-testing_cloudbuild",
+        "generation": "1676466427746342",
+        "object": "source/1676466426.14721-88864cb4e3624520876bbb43526307ea.tgz"
+      }
+    },
+    "startTime": "2023-02-15T13:07:08.840288692Z",
+    "status": "FAILURE",
+    "steps": [
+      {
+        "args": [
+          "build",
+          "--network",
+          "cloudbuild",
+          "--no-cache",
+          "-t",
+          "asia-east1-docker.pkg.dev/flypa-tw-testing/flypa-dashboard-api/flypa-dashboard-api:a98331e",
+          "."
+        ],
+        "exitCode": 1,
+        "name": "gcr.io/cloud-builders/docker",
+        "pullTiming": {
+          "endTime": "2023-02-15T13:07:22.668847297Z",
+          "startTime": "2023-02-15T13:07:22.656013386Z"
+        },
+        "status": "FAILURE",
+        "timing": {
+          "endTime": "2023-02-15T13:07:30.786031337Z",
+          "startTime": "2023-02-15T13:07:22.656013386Z"
+        }
+      }
+    ],
+    "timeout": "3600s",
+    "timing": {
+      "BUILD": {
+        "endTime": "2023-02-15T13:07:30.786144548Z",
+        "startTime": "2023-02-15T13:07:21.818270344Z"
+      },
+      "FETCHSOURCE": {
+        "endTime": "2023-02-15T13:07:21.818136916Z",
+        "startTime": "2023-02-15T13:07:09.537628262Z"
+      }
+    }
+  },
+  {
+    "artifacts": {
+      "images": [
+        "asia-east1-docker.pkg.dev/flypa-tw-testing/flypa-dashboard-api/flypa-dashboard-api:a98331e"
+      ]
+    },
+    "createTime": "2023-02-15T13:05:37.738640053Z",
+    "failureInfo": {
+      "detail": "Build step failure: build step 0 \"gcr.io/cloud-builders/docker\" failed: step exited with non-zero status: 1",
+      "type": "USER_BUILD_STEP"
+    },
+    "finishTime": "2023-02-15T13:05:54.436580726Z",
+    "id": "a5750592-6b43-4386-96b3-0ef2af481c20",
+    "images": [
+      "asia-east1-docker.pkg.dev/flypa-tw-testing/flypa-dashboard-api/flypa-dashboard-api:a98331e"
+    ],
+    "logUrl": "https://console.cloud.google.com/cloud-build/builds/a5750592-6b43-4386-96b3-0ef2af481c20?project=818100562173",
+    "logsBucket": "gs://818100562173.cloudbuild-logs.googleusercontent.com",
+    "name": "projects/818100562173/locations/global/builds/a5750592-6b43-4386-96b3-0ef2af481c20",
+    "options": {
+      "logging": "LEGACY",
+      "pool": {}
+    },
+    "projectId": "flypa-tw-testing",
+    "queueTtl": "3600s",
+    "results": {
+      "buildStepImages": [
+        "sha256:e47ccf06f182a0e869ea8fb48a134dbfea1940a274b0c06bc74c39ecfffa29e4"
+      ],
+      "buildStepOutputs": [
+        ""
+      ]
+    },
+    "source": {
+      "storageSource": {
+        "bucket": "flypa-tw-testing_cloudbuild",
+        "generation": "1676466337355327",
+        "object": "source/1676466336.3741-795b40eeefe04905b9804135f6c61e1c.tgz"
+      }
+    },
+    "sourceProvenance": {
+      "fileHashes": {
+        "gs://flypa-tw-testing_cloudbuild/source/1676466336.3741-795b40eeefe04905b9804135f6c61e1c.tgz#1676466337355327": {
+          "fileHash": [
+            {
+              "type": "MD5",
+              "value": "RrOaKGGhttKfKLL3s92-wA=="
+            }
+          ]
+        }
+      },
+      "resolvedStorageSource": {
+        "bucket": "flypa-tw-testing_cloudbuild",
+        "generation": "1676466337355327",
+        "object": "source/1676466336.3741-795b40eeefe04905b9804135f6c61e1c.tgz"
+      }
+    },
+    "startTime": "2023-02-15T13:05:38.314501990Z",
+    "status": "FAILURE",
+    "steps": [
+      {
+        "args": [
+          "build",
+          "--network",
+          "cloudbuild",
+          "--no-cache",
+          "-t",
+          "asia-east1-docker.pkg.dev/flypa-tw-testing/flypa-dashboard-api/flypa-dashboard-api:a98331e",
+          "."
+        ],
+        "exitCode": 1,
+        "name": "gcr.io/cloud-builders/docker",
+        "pullTiming": {
+          "endTime": "2023-02-15T13:05:48.478512882Z",
+          "startTime": "2023-02-15T13:05:48.473562303Z"
+        },
+        "status": "FAILURE",
+        "timing": {
+          "endTime": "2023-02-15T13:05:53.972857617Z",
+          "startTime": "2023-02-15T13:05:48.473562303Z"
+        }
+      }
+    ],
+    "timeout": "3600s",
+    "timing": {
+      "BUILD": {
+        "endTime": "2023-02-15T13:05:53.972935467Z",
+        "startTime": "2023-02-15T13:05:48.000717272Z"
+      },
+      "FETCHSOURCE": {
+        "endTime": "2023-02-15T13:05:48.000650472Z",
+        "startTime": "2023-02-15T13:05:38.740884819Z"
+      }
+    }
+  },
+  {
+    "artifacts": {
+      "images": [
+        "asia-east1-docker.pkg.dev//flypa-dashboard-api/flypa-dashboard-api:a98331e"
+      ]
+    },
+    "createTime": "2023-02-15T13:04:56.999121692Z",
+    "failureInfo": {
+      "detail": "Build step failure: build step 0 \"gcr.io/cloud-builders/docker\" failed: step exited with non-zero status: 125",
+      "type": "USER_BUILD_STEP"
+    },
+    "finishTime": "2023-02-15T13:05:11.230243576Z",
+    "id": "9836ea69-9a8f-4c90-bfc6-9beb37ae6be2",
+    "images": [
+      "asia-east1-docker.pkg.dev//flypa-dashboard-api/flypa-dashboard-api:a98331e"
+    ],
+    "logUrl": "https://console.cloud.google.com/cloud-build/builds/9836ea69-9a8f-4c90-bfc6-9beb37ae6be2?project=818100562173",
+    "logsBucket": "gs://818100562173.cloudbuild-logs.googleusercontent.com",
+    "name": "projects/818100562173/locations/global/builds/9836ea69-9a8f-4c90-bfc6-9beb37ae6be2",
+    "options": {
+      "logging": "LEGACY",
+      "pool": {}
+    },
+    "projectId": "flypa-tw-testing",
+    "queueTtl": "3600s",
+    "results": {
+      "buildStepImages": [
+        "sha256:e47ccf06f182a0e869ea8fb48a134dbfea1940a274b0c06bc74c39ecfffa29e4"
+      ],
+      "buildStepOutputs": [
+        ""
+      ]
+    },
+    "source": {
+      "storageSource": {
+        "bucket": "flypa-tw-testing_cloudbuild",
+        "generation": "1676466296613894",
+        "object": "source/1676466295.426037-50186469ce9548d798e874c228d50d34.tgz"
+      }
+    },
+    "sourceProvenance": {
+      "fileHashes": {
+        "gs://flypa-tw-testing_cloudbuild/source/1676466295.426037-50186469ce9548d798e874c228d50d34.tgz#1676466296613894": {
+          "fileHash": [
+            {
+              "type": "MD5",
+              "value": "BrRTHrBxsc0UjyY8RlbBWw=="
+            }
+          ]
+        }
+      },
+      "resolvedStorageSource": {
+        "bucket": "flypa-tw-testing_cloudbuild",
+        "generation": "1676466296613894",
+        "object": "source/1676466295.426037-50186469ce9548d798e874c228d50d34.tgz"
+      }
+    },
+    "startTime": "2023-02-15T13:04:57.615847379Z",
+    "status": "FAILURE",
+    "steps": [
+      {
+        "args": [
+          "build",
+          "--network",
+          "cloudbuild",
+          "--no-cache",
+          "-t",
+          "asia-east1-docker.pkg.dev//flypa-dashboard-api/flypa-dashboard-api:a98331e",
+          "."
+        ],
+        "exitCode": 125,
+        "name": "gcr.io/cloud-builders/docker",
+        "pullTiming": {
+          "endTime": "2023-02-15T13:05:08.532516606Z",
+          "startTime": "2023-02-15T13:05:08.527901601Z"
+        },
+        "status": "FAILURE",
+        "timing": {
+          "endTime": "2023-02-15T13:05:10.732624474Z",
+          "startTime": "2023-02-15T13:05:08.527901601Z"
+        }
+      }
+    ],
+    "timeout": "3600s",
+    "timing": {
+      "BUILD": {
+        "endTime": "2023-02-15T13:05:10.732702973Z",
+        "startTime": "2023-02-15T13:05:07.909419638Z"
+      },
+      "FETCHSOURCE": {
+        "endTime": "2023-02-15T13:05:07.909345633Z",
+        "startTime": "2023-02-15T13:04:58.091522242Z"
+      }
+    }
+  },
+  {
+    "artifacts": {
+      "images": [
+        "asia-east1-docker.pkg.dev/flypa-tw-testing/flypa-dashboard-api/flypa-dashboard-api:323514f"
+      ]
+    },
+    "createTime": "2023-02-15T09:46:29.516026726Z",
+    "failureInfo": {
+      "detail": "Build step failure: build step 0 \"gcr.io/cloud-builders/docker\" failed: step exited with non-zero status: 1",
+      "type": "USER_BUILD_STEP"
+    },
+    "finishTime": "2023-02-15T09:46:49.799891243Z",
+    "id": "93162bcf-bbb8-47b0-9b1d-5f6e152695d8",
+    "images": [
+      "asia-east1-docker.pkg.dev/flypa-tw-testing/flypa-dashboard-api/flypa-dashboard-api:323514f"
+    ],
+    "logUrl": "https://console.cloud.google.com/cloud-build/builds/93162bcf-bbb8-47b0-9b1d-5f6e152695d8?project=818100562173",
+    "logsBucket": "gs://818100562173.cloudbuild-logs.googleusercontent.com",
+    "name": "projects/818100562173/locations/global/builds/93162bcf-bbb8-47b0-9b1d-5f6e152695d8",
+    "options": {
+      "logging": "LEGACY",
+      "pool": {}
+    },
+    "projectId": "flypa-tw-testing",
+    "queueTtl": "3600s",
+    "results": {
+      "buildStepImages": [
+        "sha256:e47ccf06f182a0e869ea8fb48a134dbfea1940a274b0c06bc74c39ecfffa29e4"
+      ],
+      "buildStepOutputs": [
+        ""
+      ]
+    },
+    "source": {
+      "storageSource": {
+        "bucket": "flypa-tw-testing_cloudbuild",
+        "generation": "1676454389139686",
+        "object": "source/1676454387.628985-70a62951b25e44d3aea7ce5978696e90.tgz"
+      }
+    },
+    "sourceProvenance": {
+      "fileHashes": {
+        "gs://flypa-tw-testing_cloudbuild/source/1676454387.628985-70a62951b25e44d3aea7ce5978696e90.tgz#1676454389139686": {
+          "fileHash": [
+            {
+              "type": "MD5",
+              "value": "vIiE2j71LOkne07kYjBB9Q=="
+            }
+          ]
+        }
+      },
+      "resolvedStorageSource": {
+        "bucket": "flypa-tw-testing_cloudbuild",
+        "generation": "1676454389139686",
+        "object": "source/1676454387.628985-70a62951b25e44d3aea7ce5978696e90.tgz"
+      }
+    },
+    "startTime": "2023-02-15T09:46:30.123265331Z",
+    "status": "FAILURE",
+    "steps": [
+      {
+        "args": [
+          "build",
+          "--network",
+          "cloudbuild",
+          "--no-cache",
+          "-t",
+          "asia-east1-docker.pkg.dev/flypa-tw-testing/flypa-dashboard-api/flypa-dashboard-api:323514f",
+          "."
+        ],
+        "exitCode": 1,
+        "name": "gcr.io/cloud-builders/docker",
+        "pullTiming": {
+          "endTime": "2023-02-15T09:46:41.387696413Z",
+          "startTime": "2023-02-15T09:46:41.379255238Z"
+        },
+        "status": "FAILURE",
+        "timing": {
+          "endTime": "2023-02-15T09:46:48.952952439Z",
+          "startTime": "2023-02-15T09:46:41.379255238Z"
+        }
+      }
+    ],
+    "timeout": "3600s",
+    "timing": {
+      "BUILD": {
+        "endTime": "2023-02-15T09:46:48.953047359Z",
+        "startTime": "2023-02-15T09:46:40.801594996Z"
+      },
+      "FETCHSOURCE": {
+        "endTime": "2023-02-15T09:46:40.801507468Z",
+        "startTime": "2023-02-15T09:46:30.726636009Z"
+      }
+    }
+  },
+  {
+    "artifacts": {
+      "images": [
+        "asia-east1-docker.pkg.dev/flypa-tw-testing/flypa-dashboard-api/flypa-dashboard-api:323514f"
+      ]
+    },
+    "createTime": "2023-02-15T09:44:31.549537981Z",
+    "failureInfo": {
+      "detail": "Build step failure: build step 0 \"gcr.io/cloud-builders/docker\" failed: step exited with non-zero status: 1",
+      "type": "USER_BUILD_STEP"
+    },
+    "finishTime": "2023-02-15T09:44:47.621875019Z",
+    "id": "a3d666f1-a90f-49a0-99d9-06b1c10cf0e3",
+    "images": [
+      "asia-east1-docker.pkg.dev/flypa-tw-testing/flypa-dashboard-api/flypa-dashboard-api:323514f"
+    ],
+    "logUrl": "https://console.cloud.google.com/cloud-build/builds/a3d666f1-a90f-49a0-99d9-06b1c10cf0e3?project=818100562173",
+    "logsBucket": "gs://818100562173.cloudbuild-logs.googleusercontent.com",
+    "name": "projects/818100562173/locations/global/builds/a3d666f1-a90f-49a0-99d9-06b1c10cf0e3",
+    "options": {
+      "logging": "LEGACY",
+      "pool": {}
+    },
+    "projectId": "flypa-tw-testing",
+    "queueTtl": "3600s",
+    "results": {
+      "buildStepImages": [
+        "sha256:e47ccf06f182a0e869ea8fb48a134dbfea1940a274b0c06bc74c39ecfffa29e4"
+      ],
+      "buildStepOutputs": [
+        ""
+      ]
+    },
+    "source": {
+      "storageSource": {
+        "bucket": "flypa-tw-testing_cloudbuild",
+        "generation": "1676454271205951",
+        "object": "source/1676454270.186456-e371da7534814f3a9934e74ebbc538e1.tgz"
+      }
+    },
+    "sourceProvenance": {
+      "fileHashes": {
+        "gs://flypa-tw-testing_cloudbuild/source/1676454270.186456-e371da7534814f3a9934e74ebbc538e1.tgz#1676454271205951": {
+          "fileHash": [
+            {
+              "type": "MD5",
+              "value": "OCqL3NWpisKcK6TWthMTwg=="
+            }
+          ]
+        }
+      },
+      "resolvedStorageSource": {
+        "bucket": "flypa-tw-testing_cloudbuild",
+        "generation": "1676454271205951",
+        "object": "source/1676454270.186456-e371da7534814f3a9934e74ebbc538e1.tgz"
+      }
+    },
+    "startTime": "2023-02-15T09:44:32.108825441Z",
+    "status": "FAILURE",
+    "steps": [
+      {
+        "args": [
+          "build",
+          "--network",
+          "cloudbuild",
+          "--no-cache",
+          "-t",
+          "asia-east1-docker.pkg.dev/flypa-tw-testing/flypa-dashboard-api/flypa-dashboard-api:323514f",
+          "."
+        ],
+        "exitCode": 1,
+        "name": "gcr.io/cloud-builders/docker",
+        "pullTiming": {
+          "endTime": "2023-02-15T09:44:41.744643751Z",
+          "startTime": "2023-02-15T09:44:41.740671504Z"
+        },
+        "status": "FAILURE",
+        "timing": {
+          "endTime": "2023-02-15T09:44:47.158413776Z",
+          "startTime": "2023-02-15T09:44:41.740671504Z"
+        }
+      }
+    ],
+    "timeout": "3600s",
+    "timing": {
+      "BUILD": {
+        "endTime": "2023-02-15T09:44:47.158501842Z",
+        "startTime": "2023-02-15T09:44:41.220721727Z"
+      },
+      "FETCHSOURCE": {
+        "endTime": "2023-02-15T09:44:41.220652993Z",
+        "startTime": "2023-02-15T09:44:32.509489936Z"
+      }
+    }
+  },
+  {
+    "artifacts": {
+      "images": [
+        "asia-east1-docker.pkg.dev//flypa-dashboard-api/flypa-dashboard-api:323514f"
+      ]
+    },
+    "createTime": "2023-02-15T09:43:57.142386069Z",
+    "failureInfo": {
+      "detail": "Build step failure: build step 0 \"gcr.io/cloud-builders/docker\" failed: step exited with non-zero status: 125",
+      "type": "USER_BUILD_STEP"
+    },
+    "finishTime": "2023-02-15T09:44:10.848193437Z",
+    "id": "b5ef693a-1003-4668-b5c0-d471813bb521",
+    "images": [
+      "asia-east1-docker.pkg.dev//flypa-dashboard-api/flypa-dashboard-api:323514f"
+    ],
+    "logUrl": "https://console.cloud.google.com/cloud-build/builds/b5ef693a-1003-4668-b5c0-d471813bb521?project=818100562173",
+    "logsBucket": "gs://818100562173.cloudbuild-logs.googleusercontent.com",
+    "name": "projects/818100562173/locations/global/builds/b5ef693a-1003-4668-b5c0-d471813bb521",
+    "options": {
+      "logging": "LEGACY",
+      "pool": {}
+    },
+    "projectId": "flypa-tw-testing",
+    "queueTtl": "3600s",
+    "results": {
+      "buildStepImages": [
+        "sha256:e47ccf06f182a0e869ea8fb48a134dbfea1940a274b0c06bc74c39ecfffa29e4"
+      ],
+      "buildStepOutputs": [
+        ""
+      ]
+    },
+    "source": {
+      "storageSource": {
+        "bucket": "flypa-tw-testing_cloudbuild",
+        "generation": "1676454236725977",
+        "object": "source/1676454235.69479-5947b22f91b04e1a821d236ba5e02ce1.tgz"
+      }
+    },
+    "sourceProvenance": {
+      "fileHashes": {
+        "gs://flypa-tw-testing_cloudbuild/source/1676454235.69479-5947b22f91b04e1a821d236ba5e02ce1.tgz#1676454236725977": {
+          "fileHash": [
+            {
+              "type": "MD5",
+              "value": "JX7LVdMr_vZ82cWGHeZCEA=="
+            }
+          ]
+        }
+      },
+      "resolvedStorageSource": {
+        "bucket": "flypa-tw-testing_cloudbuild",
+        "generation": "1676454236725977",
+        "object": "source/1676454235.69479-5947b22f91b04e1a821d236ba5e02ce1.tgz"
+      }
+    },
+    "startTime": "2023-02-15T09:43:57.732696381Z",
+    "status": "FAILURE",
+    "steps": [
+      {
+        "args": [
+          "build",
+          "--network",
+          "cloudbuild",
+          "--no-cache",
+          "-t",
+          "asia-east1-docker.pkg.dev//flypa-dashboard-api/flypa-dashboard-api:323514f",
+          "."
+        ],
+        "exitCode": 125,
+        "name": "gcr.io/cloud-builders/docker",
+        "pullTiming": {
+          "endTime": "2023-02-15T09:44:08.174088962Z",
+          "startTime": "2023-02-15T09:44:08.170776494Z"
+        },
+        "status": "FAILURE",
+        "timing": {
+          "endTime": "2023-02-15T09:44:10.140350570Z",
+          "startTime": "2023-02-15T09:44:08.170776494Z"
+        }
+      }
+    ],
+    "timeout": "3600s",
+    "timing": {
+      "BUILD": {
+        "endTime": "2023-02-15T09:44:10.140434236Z",
+        "startTime": "2023-02-15T09:44:07.629039385Z"
+      },
+      "FETCHSOURCE": {
+        "endTime": "2023-02-15T09:44:07.628848641Z",
+        "startTime": "2023-02-15T09:43:58.305547200Z"
+      }
+    }
+  },
+  {
+    "createTime": "2023-02-15T09:03:29.111794985Z",
+    "failureInfo": {
+      "detail": "Build step failure: build step 1 \"gcr.io/cloud-builders/docker\" failed: step exited with non-zero status: 125",
+      "type": "USER_BUILD_STEP"
+    },
+    "finishTime": "2023-02-15T09:04:51.869654440Z",
+    "id": "187d47b8-71e3-496f-a70e-1745991dfcee",
+    "logUrl": "https://console.cloud.google.com/cloud-build/builds/187d47b8-71e3-496f-a70e-1745991dfcee?project=818100562173",
+    "logsBucket": "gs://818100562173.cloudbuild-logs.googleusercontent.com",
+    "name": "projects/818100562173/locations/global/builds/187d47b8-71e3-496f-a70e-1745991dfcee",
+    "options": {
+      "logging": "LEGACY",
+      "pool": {}
+    },
+    "projectId": "flypa-tw-testing",
+    "queueTtl": "3600s",
+    "results": {
+      "buildStepImages": [
+        "sha256:bd8852274c9e10ecd00549e5d3a73edf2549c1c6442d808ce27d1e4a04251ebd",
+        "sha256:e47ccf06f182a0e869ea8fb48a134dbfea1940a274b0c06bc74c39ecfffa29e4",
+        ""
+      ],
+      "buildStepOutputs": [
+        "",
+        "",
+        ""
+      ]
+    },
+    "source": {
+      "storageSource": {
+        "bucket": "flypa-tw-testing_cloudbuild",
+        "generation": "1676451808721941",
+        "object": "source/1676451807.733869-72ecc5c1ff3943db9fe972446c8be4eb.tgz"
+      }
+    },
+    "sourceProvenance": {
+      "fileHashes": {
+        "gs://flypa-tw-testing_cloudbuild/source/1676451807.733869-72ecc5c1ff3943db9fe972446c8be4eb.tgz#1676451808721941": {
+          "fileHash": [
+            {
+              "type": "MD5",
+              "value": "zItJL0G9FY5UfCSoZqD72A=="
+            }
+          ]
+        }
+      },
+      "resolvedStorageSource": {
+        "bucket": "flypa-tw-testing_cloudbuild",
+        "generation": "1676451808721941",
+        "object": "source/1676451807.733869-72ecc5c1ff3943db9fe972446c8be4eb.tgz"
+      }
+    },
+    "startTime": "2023-02-15T09:03:29.853026652Z",
+    "status": "FAILURE",
+    "steps": [
+      {
+        "args": [
+          "build"
+        ],
+        "entrypoint": "gradle",
+        "name": "gradle:7.6-jdk17",
+        "pullTiming": {
+          "endTime": "2023-02-15T09:03:41.172138024Z",
+          "startTime": "2023-02-15T09:03:40.138596910Z"
+        },
+        "status": "SUCCESS",
+        "timing": {
+          "endTime": "2023-02-15T09:04:49.409098569Z",
+          "startTime": "2023-02-15T09:03:40.138596910Z"
+        }
+      },
+      {
+        "args": [
+          "build",
+          "-t",
+          "asia-east1-docker.pkg.dev/flypa-tw-testing/flypa-gke-demo/flypa-dashboard-api:",
+          "--build-arg=JAR_FILE=build/libs/flypa-dashboard-api-0.0.1-SNAPSHOT.jar",
+          "."
+        ],
+        "exitCode": 125,
+        "id": "Build",
+        "name": "gcr.io/cloud-builders/docker",
+        "pullTiming": {
+          "endTime": "2023-02-15T09:04:49.412690543Z",
+          "startTime": "2023-02-15T09:04:49.409278069Z"
+        },
+        "status": "FAILURE",
+        "timing": {
+          "endTime": "2023-02-15T09:04:51.234952531Z",
+          "startTime": "2023-02-15T09:04:49.409278069Z"
+        }
+      },
+      {
+        "args": [
+          "push",
+          "asia-east1-docker.pkg.dev/flypa-tw-testing/flypa-gke-demo/flypa-dashboard-api:"
+        ],
+        "id": "Push",
+        "name": "gcr.io/cloud-builders/docker",
+        "status": "QUEUED"
+      }
+    ],
+    "timeout": "3600s",
+    "timing": {
+      "BUILD": {
+        "endTime": "2023-02-15T09:04:51.235088237Z",
+        "startTime": "2023-02-15T09:03:39.526324143Z"
+      },
+      "FETCHSOURCE": {
+        "endTime": "2023-02-15T09:03:39.526247377Z",
+        "startTime": "2023-02-15T09:03:30.403048174Z"
+      }
+    }
+  },
+  {
+    "createTime": "2023-02-15T06:59:07.723134664Z",
+    "failureInfo": {
+      "detail": "Build step failure: build step 1 \"gcr.io/cloud-builders/docker\" failed: step exited with non-zero status: 125",
+      "type": "USER_BUILD_STEP"
+    },
+    "finishTime": "2023-02-15T07:00:38.556580740Z",
+    "id": "013db225-5bcb-4bca-8cdb-cfcc289b2dde",
+    "logUrl": "https://console.cloud.google.com/cloud-build/builds/013db225-5bcb-4bca-8cdb-cfcc289b2dde?project=818100562173",
+    "logsBucket": "gs://818100562173.cloudbuild-logs.googleusercontent.com",
+    "name": "projects/818100562173/locations/global/builds/013db225-5bcb-4bca-8cdb-cfcc289b2dde",
+    "options": {
+      "logging": "LEGACY",
+      "pool": {}
+    },
+    "projectId": "flypa-tw-testing",
+    "queueTtl": "3600s",
+    "results": {
+      "buildStepImages": [
+        "sha256:bd8852274c9e10ecd00549e5d3a73edf2549c1c6442d808ce27d1e4a04251ebd",
+        "sha256:e47ccf06f182a0e869ea8fb48a134dbfea1940a274b0c06bc74c39ecfffa29e4",
+        ""
+      ],
+      "buildStepOutputs": [
+        "",
+        "",
+        ""
+      ]
+    },
+    "source": {
+      "storageSource": {
+        "bucket": "flypa-tw-testing_cloudbuild",
+        "generation": "1676444347339309",
+        "object": "source/1676444346.313603-63ac80e81fb2422bbe932f8e94d8873f.tgz"
+      }
+    },
+    "sourceProvenance": {
+      "fileHashes": {
+        "gs://flypa-tw-testing_cloudbuild/source/1676444346.313603-63ac80e81fb2422bbe932f8e94d8873f.tgz#1676444347339309": {
+          "fileHash": [
+            {
+              "type": "MD5",
+              "value": "rdJm4xbn4fU8-gwQUvZj3w=="
+            }
+          ]
+        }
+      },
+      "resolvedStorageSource": {
+        "bucket": "flypa-tw-testing_cloudbuild",
+        "generation": "1676444347339309",
+        "object": "source/1676444346.313603-63ac80e81fb2422bbe932f8e94d8873f.tgz"
+      }
+    },
+    "startTime": "2023-02-15T06:59:08.330991506Z",
+    "status": "FAILURE",
+    "steps": [
+      {
+        "args": [
+          "build"
+        ],
+        "entrypoint": "gradle",
+        "name": "gradle:7.6-jdk17",
+        "pullTiming": {
+          "endTime": "2023-02-15T06:59:20.751851029Z",
+          "startTime": "2023-02-15T06:59:19.548614695Z"
+        },
+        "status": "SUCCESS",
+        "timing": {
+          "endTime": "2023-02-15T07:00:35.873243725Z",
+          "startTime": "2023-02-15T06:59:19.548614695Z"
+        }
+      },
+      {
+        "args": [
+          "build",
+          "-t",
+          "asia-east1-docker.pkg.dev/flypa-tw-testing/flypa-gke-demo/flypa-dashboard-api:",
+          "--build-arg=JAR_FILE=build/libs/flypa-dashboard-api-0.0.1-SNAPSHOT.jar",
+          "."
+        ],
+        "exitCode": 125,
+        "id": "Build",
+        "name": "gcr.io/cloud-builders/docker",
+        "pullTiming": {
+          "endTime": "2023-02-15T07:00:35.875945910Z",
+          "startTime": "2023-02-15T07:00:35.873390100Z"
+        },
+        "status": "FAILURE",
+        "timing": {
+          "endTime": "2023-02-15T07:00:37.839263961Z",
+          "startTime": "2023-02-15T07:00:35.873390100Z"
+        }
+      },
+      {
+        "args": [
+          "push",
+          "asia-east1-docker.pkg.dev/flypa-tw-testing/flypa-gke-demo/flypa-dashboard-api:"
+        ],
+        "id": "Push",
+        "name": "gcr.io/cloud-builders/docker",
+        "status": "QUEUED"
+      }
+    ],
+    "timeout": "3600s",
+    "timing": {
+      "BUILD": {
+        "endTime": "2023-02-15T07:00:37.839387837Z",
+        "startTime": "2023-02-15T06:59:18.930548861Z"
+      },
+      "FETCHSOURCE": {
+        "endTime": "2023-02-15T06:59:18.930468732Z",
+        "startTime": "2023-02-15T06:59:08.780317801Z"
+      }
+    }
+  },
+  {
+    "artifacts": {
+      "images": [
+        "asia-east1-docker.pkg.dev/flypa-tw-testing/flypa-dashboard-api/flypa-dashboard-api:323514f"
+      ]
+    },
+    "createTime": "2023-02-15T06:42:58.698928167Z",
+    "failureInfo": {
+      "detail": "Build step failure: build step 0 \"gcr.io/cloud-builders/docker\" failed: step exited with non-zero status: 1",
+      "type": "USER_BUILD_STEP"
+    },
+    "finishTime": "2023-02-15T06:43:17.681023290Z",
+    "id": "93a0d53e-1f7d-47f9-9de6-b62fc07b2650",
+    "images": [
+      "asia-east1-docker.pkg.dev/flypa-tw-testing/flypa-dashboard-api/flypa-dashboard-api:323514f"
+    ],
+    "logUrl": "https://console.cloud.google.com/cloud-build/builds/93a0d53e-1f7d-47f9-9de6-b62fc07b2650?project=818100562173",
+    "logsBucket": "gs://818100562173.cloudbuild-logs.googleusercontent.com",
+    "name": "projects/818100562173/locations/global/builds/93a0d53e-1f7d-47f9-9de6-b62fc07b2650",
+    "options": {
+      "logging": "LEGACY",
+      "pool": {}
+    },
+    "projectId": "flypa-tw-testing",
+    "queueTtl": "3600s",
+    "results": {
+      "buildStepImages": [
+        "sha256:e47ccf06f182a0e869ea8fb48a134dbfea1940a274b0c06bc74c39ecfffa29e4"
+      ],
+      "buildStepOutputs": [
+        ""
+      ]
+    },
+    "source": {
+      "storageSource": {
+        "bucket": "flypa-tw-testing_cloudbuild",
+        "generation": "1676443378318917",
+        "object": "source/1676443376.786199-a7923506095d45568bb414bc84670426.tgz"
+      }
+    },
+    "sourceProvenance": {
+      "fileHashes": {
+        "gs://flypa-tw-testing_cloudbuild/source/1676443376.786199-a7923506095d45568bb414bc84670426.tgz#1676443378318917": {
+          "fileHash": [
+            {
+              "type": "MD5",
+              "value": "v2PLsuiVQLDAD-n4TcxgKQ=="
+            }
+          ]
+        }
+      },
+      "resolvedStorageSource": {
+        "bucket": "flypa-tw-testing_cloudbuild",
+        "generation": "1676443378318917",
+        "object": "source/1676443376.786199-a7923506095d45568bb414bc84670426.tgz"
+      }
+    },
+    "startTime": "2023-02-15T06:42:59.311744508Z",
+    "status": "FAILURE",
+    "steps": [
+      {
+        "args": [
+          "build",
+          "--network",
+          "cloudbuild",
+          "--no-cache",
+          "-t",
+          "asia-east1-docker.pkg.dev/flypa-tw-testing/flypa-dashboard-api/flypa-dashboard-api:323514f",
+          "."
+        ],
+        "exitCode": 1,
+        "name": "gcr.io/cloud-builders/docker",
+        "pullTiming": {
+          "endTime": "2023-02-15T06:43:09.924636671Z",
+          "startTime": "2023-02-15T06:43:09.920899384Z"
+        },
+        "status": "FAILURE",
+        "timing": {
+          "endTime": "2023-02-15T06:43:16.976264131Z",
+          "startTime": "2023-02-15T06:43:09.920899384Z"
+        }
+      }
+    ],
+    "timeout": "3600s",
+    "timing": {
+      "BUILD": {
+        "endTime": "2023-02-15T06:43:16.976402674Z",
+        "startTime": "2023-02-15T06:43:09.338172308Z"
+      },
+      "FETCHSOURCE": {
+        "endTime": "2023-02-15T06:43:09.338091276Z",
+        "startTime": "2023-02-15T06:42:59.864994339Z"
+      }
+    }
+  },
+  {
+    "artifacts": {
+      "images": [
+        "asia-east1-docker.pkg.dev//flypa-dashboard-api/flypa-dashboard-api:323514f"
+      ]
+    },
+    "createTime": "2023-02-15T06:41:52.361921285Z",
+    "failureInfo": {
+      "detail": "Build step failure: build step 0 \"gcr.io/cloud-builders/docker\" failed: step exited with non-zero status: 125",
+      "type": "USER_BUILD_STEP"
+    },
+    "finishTime": "2023-02-15T06:42:05.858067979Z",
+    "id": "774ff4a2-ff22-4c58-b6a1-a7b455e5dab0",
+    "images": [
+      "asia-east1-docker.pkg.dev//flypa-dashboard-api/flypa-dashboard-api:323514f"
+    ],
+    "logUrl": "https://console.cloud.google.com/cloud-build/builds/774ff4a2-ff22-4c58-b6a1-a7b455e5dab0?project=818100562173",
+    "logsBucket": "gs://818100562173.cloudbuild-logs.googleusercontent.com",
+    "name": "projects/818100562173/locations/global/builds/774ff4a2-ff22-4c58-b6a1-a7b455e5dab0",
+    "options": {
+      "logging": "LEGACY",
+      "pool": {}
+    },
+    "projectId": "flypa-tw-testing",
+    "queueTtl": "3600s",
+    "results": {
+      "buildStepImages": [
+        "sha256:e47ccf06f182a0e869ea8fb48a134dbfea1940a274b0c06bc74c39ecfffa29e4"
+      ],
+      "buildStepOutputs": [
+        ""
+      ]
+    },
+    "source": {
+      "storageSource": {
+        "bucket": "flypa-tw-testing_cloudbuild",
+        "generation": "1676443311989657",
+        "object": "source/1676443310.948791-5219819fa55d40f79619405985745839.tgz"
+      }
+    },
+    "sourceProvenance": {
+      "fileHashes": {
+        "gs://flypa-tw-testing_cloudbuild/source/1676443310.948791-5219819fa55d40f79619405985745839.tgz#1676443311989657": {
+          "fileHash": [
+            {
+              "type": "MD5",
+              "value": "UPD_M9iS5Qh_SPuk2PYJFg=="
+            }
+          ]
+        }
+      },
+      "resolvedStorageSource": {
+        "bucket": "flypa-tw-testing_cloudbuild",
+        "generation": "1676443311989657",
+        "object": "source/1676443310.948791-5219819fa55d40f79619405985745839.tgz"
+      }
+    },
+    "startTime": "2023-02-15T06:41:52.979294387Z",
+    "status": "FAILURE",
+    "steps": [
+      {
+        "args": [
+          "build",
+          "--network",
+          "cloudbuild",
+          "--no-cache",
+          "-t",
+          "asia-east1-docker.pkg.dev//flypa-dashboard-api/flypa-dashboard-api:323514f",
+          "."
+        ],
+        "exitCode": 125,
+        "name": "gcr.io/cloud-builders/docker",
+        "pullTiming": {
+          "endTime": "2023-02-15T06:42:03.173259287Z",
+          "startTime": "2023-02-15T06:42:03.169102370Z"
+        },
+        "status": "FAILURE",
+        "timing": {
+          "endTime": "2023-02-15T06:42:05.340631020Z",
+          "startTime": "2023-02-15T06:42:03.169102370Z"
+        }
+      }
+    ],
+    "timeout": "3600s",
+    "timing": {
+      "BUILD": {
+        "endTime": "2023-02-15T06:42:05.340706142Z",
+        "startTime": "2023-02-15T06:42:02.626647771Z"
+      },
+      "FETCHSOURCE": {
+        "endTime": "2023-02-15T06:42:02.626563328Z",
+        "startTime": "2023-02-15T06:41:53.402724106Z"
+      }
+    }
+  },
+  {
+    "artifacts": {
+      "images": [
+        "asia-east1-docker.pkg.dev//flypa-dashboard-api/flypa-dashboard-api:323514f"
+      ]
+    },
+    "createTime": "2023-02-15T06:33:49.698219315Z",
+    "failureInfo": {
+      "detail": "Build step failure: build step 0 \"gcr.io/cloud-builders/docker\" failed: step exited with non-zero status: 125",
+      "type": "USER_BUILD_STEP"
+    },
+    "finishTime": "2023-02-15T06:34:05.994937568Z",
+    "id": "1a4e8ca4-11dc-48e0-b61f-a8338b34f96a",
+    "images": [
+      "asia-east1-docker.pkg.dev//flypa-dashboard-api/flypa-dashboard-api:323514f"
+    ],
+    "logUrl": "https://console.cloud.google.com/cloud-build/builds/1a4e8ca4-11dc-48e0-b61f-a8338b34f96a?project=818100562173",
+    "logsBucket": "gs://818100562173.cloudbuild-logs.googleusercontent.com",
+    "name": "projects/818100562173/locations/global/builds/1a4e8ca4-11dc-48e0-b61f-a8338b34f96a",
+    "options": {
+      "logging": "LEGACY",
+      "pool": {}
+    },
+    "projectId": "flypa-tw-testing",
+    "queueTtl": "3600s",
+    "results": {
+      "buildStepImages": [
+        "sha256:e47ccf06f182a0e869ea8fb48a134dbfea1940a274b0c06bc74c39ecfffa29e4"
+      ],
+      "buildStepOutputs": [
+        ""
+      ]
+    },
+    "source": {
+      "storageSource": {
+        "bucket": "flypa-tw-testing_cloudbuild",
+        "generation": "1676442829303825",
+        "object": "source/1676442828.284677-730ac352ddc545518cfc813decec7cc0.tgz"
+      }
+    },
+    "sourceProvenance": {
+      "fileHashes": {
+        "gs://flypa-tw-testing_cloudbuild/source/1676442828.284677-730ac352ddc545518cfc813decec7cc0.tgz#1676442829303825": {
+          "fileHash": [
+            {
+              "type": "MD5",
+              "value": "LSxIOeImkRKki-4Utg0YVA=="
+            }
+          ]
+        }
+      },
+      "resolvedStorageSource": {
+        "bucket": "flypa-tw-testing_cloudbuild",
+        "generation": "1676442829303825",
+        "object": "source/1676442828.284677-730ac352ddc545518cfc813decec7cc0.tgz"
+      }
+    },
+    "startTime": "2023-02-15T06:33:50.317214666Z",
+    "status": "FAILURE",
+    "steps": [
+      {
+        "args": [
+          "build",
+          "--network",
+          "cloudbuild",
+          "--no-cache",
+          "-t",
+          "asia-east1-docker.pkg.dev//flypa-dashboard-api/flypa-dashboard-api:323514f",
+          "."
+        ],
+        "exitCode": 125,
+        "name": "gcr.io/cloud-builders/docker",
+        "pullTiming": {
+          "endTime": "2023-02-15T06:34:02.523844249Z",
+          "startTime": "2023-02-15T06:34:02.517400935Z"
+        },
+        "status": "FAILURE",
+        "timing": {
+          "endTime": "2023-02-15T06:34:05.305420826Z",
+          "startTime": "2023-02-15T06:34:02.517400935Z"
+        }
+      }
+    ],
+    "timeout": "3600s",
+    "timing": {
+      "BUILD": {
+        "endTime": "2023-02-15T06:34:05.305520818Z",
+        "startTime": "2023-02-15T06:34:01.874631636Z"
+      },
+      "FETCHSOURCE": {
+        "endTime": "2023-02-15T06:34:01.874530574Z",
+        "startTime": "2023-02-15T06:33:50.992907497Z"
+      }
+    }
+  },
+  {
+    "artifacts": {
+      "images": [
+        "asia-east1-docker.pkg.dev//flypa-dashboard-api/flypa-dashboard-api:323514f"
+      ]
+    },
+    "createTime": "2023-02-15T06:32:40.177473109Z",
+    "failureInfo": {
+      "detail": "Build step failure: build step 0 \"gcr.io/cloud-builders/docker\" failed: step exited with non-zero status: 125",
+      "type": "USER_BUILD_STEP"
+    },
+    "finishTime": "2023-02-15T06:32:54.447493978Z",
+    "id": "d0f4d27c-da06-46a7-8631-7c58d13d061b",
+    "images": [
+      "asia-east1-docker.pkg.dev//flypa-dashboard-api/flypa-dashboard-api:323514f"
+    ],
+    "logUrl": "https://console.cloud.google.com/cloud-build/builds/d0f4d27c-da06-46a7-8631-7c58d13d061b?project=818100562173",
+    "logsBucket": "gs://818100562173.cloudbuild-logs.googleusercontent.com",
+    "name": "projects/818100562173/locations/global/builds/d0f4d27c-da06-46a7-8631-7c58d13d061b",
+    "options": {
+      "logging": "LEGACY",
+      "pool": {}
+    },
+    "projectId": "flypa-tw-testing",
+    "queueTtl": "3600s",
+    "results": {
+      "buildStepImages": [
+        "sha256:e47ccf06f182a0e869ea8fb48a134dbfea1940a274b0c06bc74c39ecfffa29e4"
+      ],
+      "buildStepOutputs": [
+        ""
+      ]
+    },
+    "source": {
+      "storageSource": {
+        "bucket": "flypa-tw-testing_cloudbuild",
+        "generation": "1676442759784053",
+        "object": "source/1676442758.780769-a6f54168ba5b4ea0acf9d46e11cfae7a.tgz"
+      }
+    },
+    "sourceProvenance": {
+      "fileHashes": {
+        "gs://flypa-tw-testing_cloudbuild/source/1676442758.780769-a6f54168ba5b4ea0acf9d46e11cfae7a.tgz#1676442759784053": {
+          "fileHash": [
+            {
+              "type": "MD5",
+              "value": "i0zom1lvxC43SeQn1ucuUA=="
+            }
+          ]
+        }
+      },
+      "resolvedStorageSource": {
+        "bucket": "flypa-tw-testing_cloudbuild",
+        "generation": "1676442759784053",
+        "object": "source/1676442758.780769-a6f54168ba5b4ea0acf9d46e11cfae7a.tgz"
+      }
+    },
+    "startTime": "2023-02-15T06:32:40.835808551Z",
+    "status": "FAILURE",
+    "steps": [
+      {
+        "args": [
+          "build",
+          "--network",
+          "cloudbuild",
+          "--no-cache",
+          "-t",
+          "asia-east1-docker.pkg.dev//flypa-dashboard-api/flypa-dashboard-api:323514f",
+          "."
+        ],
+        "exitCode": 125,
+        "name": "gcr.io/cloud-builders/docker",
+        "pullTiming": {
+          "endTime": "2023-02-15T06:32:51.673882966Z",
+          "startTime": "2023-02-15T06:32:51.669899233Z"
+        },
+        "status": "FAILURE",
+        "timing": {
+          "endTime": "2023-02-15T06:32:53.822096593Z",
+          "startTime": "2023-02-15T06:32:51.669899233Z"
+        }
+      }
+    ],
+    "timeout": "3600s",
+    "timing": {
+      "BUILD": {
+        "endTime": "2023-02-15T06:32:53.822171701Z",
+        "startTime": "2023-02-15T06:32:51.080751965Z"
+      },
+      "FETCHSOURCE": {
+        "endTime": "2023-02-15T06:32:51.080622352Z",
+        "startTime": "2023-02-15T06:32:41.361907518Z"
+      }
+    }
+  },
+  {
+    "artifacts": {
+      "images": [
+        "asia-east1-docker.pkg.dev//flypa-dashboard-api/flypa-dashboard-api:323514f"
+      ]
+    },
+    "createTime": "2023-02-15T06:28:03.247785678Z",
+    "failureInfo": {
+      "detail": "Build step failure: build step 0 \"gcr.io/cloud-builders/docker\" failed: step exited with non-zero status: 125",
+      "type": "USER_BUILD_STEP"
+    },
+    "finishTime": "2023-02-15T06:28:17.640222362Z",
+    "id": "55a4ef6c-d04e-4c7b-a27e-6b750dde9da9",
+    "images": [
+      "asia-east1-docker.pkg.dev//flypa-dashboard-api/flypa-dashboard-api:323514f"
+    ],
+    "logUrl": "https://console.cloud.google.com/cloud-build/builds/55a4ef6c-d04e-4c7b-a27e-6b750dde9da9?project=818100562173",
+    "logsBucket": "gs://818100562173.cloudbuild-logs.googleusercontent.com",
+    "name": "projects/818100562173/locations/global/builds/55a4ef6c-d04e-4c7b-a27e-6b750dde9da9",
+    "options": {
+      "logging": "LEGACY",
+      "pool": {}
+    },
+    "projectId": "flypa-tw-testing",
+    "queueTtl": "3600s",
+    "results": {
+      "buildStepImages": [
+        "sha256:e47ccf06f182a0e869ea8fb48a134dbfea1940a274b0c06bc74c39ecfffa29e4"
+      ],
+      "buildStepOutputs": [
+        ""
+      ]
+    },
+    "source": {
+      "storageSource": {
+        "bucket": "flypa-tw-testing_cloudbuild",
+        "generation": "1676442482851639",
+        "object": "source/1676442481.826026-100f576a502944eb86654cc5cfe62927.tgz"
+      }
+    },
+    "sourceProvenance": {
+      "fileHashes": {
+        "gs://flypa-tw-testing_cloudbuild/source/1676442481.826026-100f576a502944eb86654cc5cfe62927.tgz#1676442482851639": {
+          "fileHash": [
+            {
+              "type": "MD5",
+              "value": "vqOiy2_QZ_ZHyS9LT1zQGg=="
+            }
+          ]
+        }
+      },
+      "resolvedStorageSource": {
+        "bucket": "flypa-tw-testing_cloudbuild",
+        "generation": "1676442482851639",
+        "object": "source/1676442481.826026-100f576a502944eb86654cc5cfe62927.tgz"
+      }
+    },
+    "startTime": "2023-02-15T06:28:04.047987046Z",
+    "status": "FAILURE",
+    "steps": [
+      {
+        "args": [
+          "build",
+          "--network",
+          "cloudbuild",
+          "--no-cache",
+          "-t",
+          "asia-east1-docker.pkg.dev//flypa-dashboard-api/flypa-dashboard-api:323514f",
+          "."
+        ],
+        "exitCode": 125,
+        "name": "gcr.io/cloud-builders/docker",
+        "pullTiming": {
+          "endTime": "2023-02-15T06:28:14.840620697Z",
+          "startTime": "2023-02-15T06:28:14.836459446Z"
+        },
+        "status": "FAILURE",
+        "timing": {
+          "endTime": "2023-02-15T06:28:16.986977963Z",
+          "startTime": "2023-02-15T06:28:14.836459446Z"
+        }
+      }
+    ],
+    "timeout": "3600s",
+    "timing": {
+      "BUILD": {
+        "endTime": "2023-02-15T06:28:16.987090120Z",
+        "startTime": "2023-02-15T06:28:14.238755257Z"
+      },
+      "FETCHSOURCE": {
+        "endTime": "2023-02-15T06:28:14.238670048Z",
+        "startTime": "2023-02-15T06:28:04.565268848Z"
+      }
+    }
+  },
+  {
+    "artifacts": {
+      "images": [
+        "asia-east1-docker.pkg.dev//flypa-dashboard-api/flypa-dashboard-api:323514f"
+      ]
+    },
+    "createTime": "2023-02-15T06:23:43.286656142Z",
+    "failureInfo": {
+      "detail": "Build step failure: build step 0 \"gcr.io/cloud-builders/docker\" failed: step exited with non-zero status: 125",
+      "type": "USER_BUILD_STEP"
+    },
+    "finishTime": "2023-02-15T06:23:57.235446335Z",
+    "id": "341ea154-3e7d-4ae1-a52a-bf6778e6e918",
+    "images": [
+      "asia-east1-docker.pkg.dev//flypa-dashboard-api/flypa-dashboard-api:323514f"
+    ],
+    "logUrl": "https://console.cloud.google.com/cloud-build/builds/341ea154-3e7d-4ae1-a52a-bf6778e6e918?project=818100562173",
+    "logsBucket": "gs://818100562173.cloudbuild-logs.googleusercontent.com",
+    "name": "projects/818100562173/locations/global/builds/341ea154-3e7d-4ae1-a52a-bf6778e6e918",
+    "options": {
+      "logging": "LEGACY",
+      "pool": {}
+    },
+    "projectId": "flypa-tw-testing",
+    "queueTtl": "3600s",
+    "results": {
+      "buildStepImages": [
+        "sha256:e47ccf06f182a0e869ea8fb48a134dbfea1940a274b0c06bc74c39ecfffa29e4"
+      ],
+      "buildStepOutputs": [
+        ""
+      ]
+    },
+    "source": {
+      "storageSource": {
+        "bucket": "flypa-tw-testing_cloudbuild",
+        "generation": "1676442222894706",
+        "object": "source/1676442221.874369-565c21bd2a4e401e88877e0c17e3871b.tgz"
+      }
+    },
+    "sourceProvenance": {
+      "fileHashes": {
+        "gs://flypa-tw-testing_cloudbuild/source/1676442221.874369-565c21bd2a4e401e88877e0c17e3871b.tgz#1676442222894706": {
+          "fileHash": [
+            {
+              "type": "MD5",
+              "value": "Koz7xRKLao1hi7u75mfplg=="
+            }
+          ]
+        }
+      },
+      "resolvedStorageSource": {
+        "bucket": "flypa-tw-testing_cloudbuild",
+        "generation": "1676442222894706",
+        "object": "source/1676442221.874369-565c21bd2a4e401e88877e0c17e3871b.tgz"
+      }
+    },
+    "startTime": "2023-02-15T06:23:43.907859072Z",
+    "status": "FAILURE",
+    "steps": [
+      {
+        "args": [
+          "build",
+          "--network",
+          "cloudbuild",
+          "--no-cache",
+          "-t",
+          "asia-east1-docker.pkg.dev//flypa-dashboard-api/flypa-dashboard-api:323514f",
+          "."
+        ],
+        "exitCode": 125,
+        "name": "gcr.io/cloud-builders/docker",
+        "pullTiming": {
+          "endTime": "2023-02-15T06:23:54.606598816Z",
+          "startTime": "2023-02-15T06:23:54.602557623Z"
+        },
+        "status": "FAILURE",
+        "timing": {
+          "endTime": "2023-02-15T06:23:56.732721659Z",
+          "startTime": "2023-02-15T06:23:54.602557623Z"
+        }
+      }
+    ],
+    "timeout": "3600s",
+    "timing": {
+      "BUILD": {
+        "endTime": "2023-02-15T06:23:56.732812374Z",
+        "startTime": "2023-02-15T06:23:54.041752547Z"
+      },
+      "FETCHSOURCE": {
+        "endTime": "2023-02-15T06:23:54.041675014Z",
+        "startTime": "2023-02-15T06:23:44.395911711Z"
+      }
+    }
+  },
+  {
+    "artifacts": {
+      "images": [
+        "asia-east1-docker.pkg.dev//flypa-dashboard-api/flypa-dashboard-api:323514f"
+      ]
+    },
+    "createTime": "2023-02-15T06:17:59.064076832Z",
+    "failureInfo": {
+      "detail": "Build step failure: build step 0 \"gcr.io/cloud-builders/docker\" failed: step exited with non-zero status: 125",
+      "type": "USER_BUILD_STEP"
+    },
+    "finishTime": "2023-02-15T06:18:12.982745141Z",
+    "id": "31271f8f-e6db-4a02-8d99-ec72f251b96e",
+    "images": [
+      "asia-east1-docker.pkg.dev//flypa-dashboard-api/flypa-dashboard-api:323514f"
+    ],
+    "logUrl": "https://console.cloud.google.com/cloud-build/builds/31271f8f-e6db-4a02-8d99-ec72f251b96e?project=818100562173",
+    "logsBucket": "gs://818100562173.cloudbuild-logs.googleusercontent.com",
+    "name": "projects/818100562173/locations/global/builds/31271f8f-e6db-4a02-8d99-ec72f251b96e",
+    "options": {
+      "logging": "LEGACY",
+      "pool": {}
+    },
+    "projectId": "flypa-tw-testing",
+    "queueTtl": "3600s",
+    "results": {
+      "buildStepImages": [
+        "sha256:e47ccf06f182a0e869ea8fb48a134dbfea1940a274b0c06bc74c39ecfffa29e4"
+      ],
+      "buildStepOutputs": [
+        ""
+      ]
+    },
+    "source": {
+      "storageSource": {
+        "bucket": "flypa-tw-testing_cloudbuild",
+        "generation": "1676441878692985",
+        "object": "source/1676441877.640528-c5f035e04898471ba1e43b566ed4ac6e.tgz"
+      }
+    },
+    "sourceProvenance": {
+      "fileHashes": {
+        "gs://flypa-tw-testing_cloudbuild/source/1676441877.640528-c5f035e04898471ba1e43b566ed4ac6e.tgz#1676441878692985": {
+          "fileHash": [
+            {
+              "type": "MD5",
+              "value": "ArMNqmunPViJiWRPe4ERgg=="
+            }
+          ]
+        }
+      },
+      "resolvedStorageSource": {
+        "bucket": "flypa-tw-testing_cloudbuild",
+        "generation": "1676441878692985",
+        "object": "source/1676441877.640528-c5f035e04898471ba1e43b566ed4ac6e.tgz"
+      }
+    },
+    "startTime": "2023-02-15T06:17:59.639538791Z",
+    "status": "FAILURE",
+    "steps": [
+      {
+        "args": [
+          "build",
+          "--network",
+          "cloudbuild",
+          "--no-cache",
+          "-t",
+          "asia-east1-docker.pkg.dev//flypa-dashboard-api/flypa-dashboard-api:323514f",
+          "."
+        ],
+        "exitCode": 125,
+        "name": "gcr.io/cloud-builders/docker",
+        "pullTiming": {
+          "endTime": "2023-02-15T06:18:10.242331739Z",
+          "startTime": "2023-02-15T06:18:10.238297532Z"
+        },
+        "status": "FAILURE",
+        "timing": {
+          "endTime": "2023-02-15T06:18:12.458075744Z",
+          "startTime": "2023-02-15T06:18:10.238297532Z"
+        }
+      }
+    ],
+    "timeout": "3600s",
+    "timing": {
+      "BUILD": {
+        "endTime": "2023-02-15T06:18:12.458203448Z",
+        "startTime": "2023-02-15T06:18:09.696051718Z"
+      },
+      "FETCHSOURCE": {
+        "endTime": "2023-02-15T06:18:09.695979761Z",
+        "startTime": "2023-02-15T06:18:00.102748029Z"
+      }
+    }
+  },
+  {
+    "artifacts": {
+      "images": [
+        "asia-east1-docker.pkg.dev//flypa-dashboard-api/flypa-dashboard-api:323514f"
+      ]
+    },
+    "createTime": "2023-02-15T06:12:18.494460301Z",
+    "failureInfo": {
+      "detail": "Build step failure: build step 0 \"gcr.io/cloud-builders/docker\" failed: step exited with non-zero status: 125",
+      "type": "USER_BUILD_STEP"
+    },
+    "finishTime": "2023-02-15T06:12:32.791927012Z",
+    "id": "674bf770-114e-4e4b-84a0-cb2f80e2eb8d",
+    "images": [
+      "asia-east1-docker.pkg.dev//flypa-dashboard-api/flypa-dashboard-api:323514f"
+    ],
+    "logUrl": "https://console.cloud.google.com/cloud-build/builds/674bf770-114e-4e4b-84a0-cb2f80e2eb8d?project=818100562173",
+    "logsBucket": "gs://818100562173.cloudbuild-logs.googleusercontent.com",
+    "name": "projects/818100562173/locations/global/builds/674bf770-114e-4e4b-84a0-cb2f80e2eb8d",
+    "options": {
+      "logging": "LEGACY",
+      "pool": {}
+    },
+    "projectId": "flypa-tw-testing",
+    "queueTtl": "3600s",
+    "results": {
+      "buildStepImages": [
+        "sha256:e47ccf06f182a0e869ea8fb48a134dbfea1940a274b0c06bc74c39ecfffa29e4"
+      ],
+      "buildStepOutputs": [
+        ""
+      ]
+    },
+    "source": {
+      "storageSource": {
+        "bucket": "flypa-tw-testing_cloudbuild",
+        "generation": "1676441538119751",
+        "object": "source/1676441537.072174-223af26179d54107a60289c24db13f8f.tgz"
+      }
+    },
+    "sourceProvenance": {
+      "fileHashes": {
+        "gs://flypa-tw-testing_cloudbuild/source/1676441537.072174-223af26179d54107a60289c24db13f8f.tgz#1676441538119751": {
+          "fileHash": [
+            {
+              "type": "MD5",
+              "value": "IgFYvpQLebsVhXTA94tx4Q=="
+            }
+          ]
+        }
+      },
+      "resolvedStorageSource": {
+        "bucket": "flypa-tw-testing_cloudbuild",
+        "generation": "1676441538119751",
+        "object": "source/1676441537.072174-223af26179d54107a60289c24db13f8f.tgz"
+      }
+    },
+    "startTime": "2023-02-15T06:12:19.163238777Z",
+    "status": "FAILURE",
+    "steps": [
+      {
+        "args": [
+          "build",
+          "--network",
+          "cloudbuild",
+          "--no-cache",
+          "-t",
+          "asia-east1-docker.pkg.dev//flypa-dashboard-api/flypa-dashboard-api:323514f",
+          "."
+        ],
+        "exitCode": 125,
+        "name": "gcr.io/cloud-builders/docker",
+        "pullTiming": {
+          "endTime": "2023-02-15T06:12:30.049246925Z",
+          "startTime": "2023-02-15T06:12:30.045030146Z"
+        },
+        "status": "FAILURE",
+        "timing": {
+          "endTime": "2023-02-15T06:12:32.171612367Z",
+          "startTime": "2023-02-15T06:12:30.045030146Z"
+        }
+      }
+    ],
+    "timeout": "3600s",
+    "timing": {
+      "BUILD": {
+        "endTime": "2023-02-15T06:12:32.171701142Z",
+        "startTime": "2023-02-15T06:12:29.427259119Z"
+      },
+      "FETCHSOURCE": {
+        "endTime": "2023-02-15T06:12:29.427152626Z",
+        "startTime": "2023-02-15T06:12:19.796571546Z"
+      }
+    }
+  },
+  {
+    "artifacts": {
+      "images": [
+        "asia-east1-docker.pkg.dev//flypa-dashboard-api/flypa-dashboard-api:323514f"
+      ]
+    },
+    "createTime": "2023-02-15T06:08:34.341424396Z",
+    "failureInfo": {
+      "detail": "Build step failure: build step 0 \"gcr.io/cloud-builders/docker\" failed: step exited with non-zero status: 125",
+      "type": "USER_BUILD_STEP"
+    },
+    "finishTime": "2023-02-15T06:08:47.945648651Z",
+    "id": "f3543bae-e2d4-4533-88c3-bcac555cf98a",
+    "images": [
+      "asia-east1-docker.pkg.dev//flypa-dashboard-api/flypa-dashboard-api:323514f"
+    ],
+    "logUrl": "https://console.cloud.google.com/cloud-build/builds/f3543bae-e2d4-4533-88c3-bcac555cf98a?project=818100562173",
+    "logsBucket": "gs://818100562173.cloudbuild-logs.googleusercontent.com",
+    "name": "projects/818100562173/locations/global/builds/f3543bae-e2d4-4533-88c3-bcac555cf98a",
+    "options": {
+      "logging": "LEGACY",
+      "pool": {}
+    },
+    "projectId": "flypa-tw-testing",
+    "queueTtl": "3600s",
+    "results": {
+      "buildStepImages": [
+        "sha256:e47ccf06f182a0e869ea8fb48a134dbfea1940a274b0c06bc74c39ecfffa29e4"
+      ],
+      "buildStepOutputs": [
+        ""
+      ]
+    },
+    "source": {
+      "storageSource": {
+        "bucket": "flypa-tw-testing_cloudbuild",
+        "generation": "1676441313960101",
+        "object": "source/1676441312.919627-74916edeab2043b996033dd20436afb9.tgz"
+      }
+    },
+    "sourceProvenance": {
+      "fileHashes": {
+        "gs://flypa-tw-testing_cloudbuild/source/1676441312.919627-74916edeab2043b996033dd20436afb9.tgz#1676441313960101": {
+          "fileHash": [
+            {
+              "type": "MD5",
+              "value": "CVrQ_ofBBn7BzY8zUpTxCg=="
+            }
+          ]
+        }
+      },
+      "resolvedStorageSource": {
+        "bucket": "flypa-tw-testing_cloudbuild",
+        "generation": "1676441313960101",
+        "object": "source/1676441312.919627-74916edeab2043b996033dd20436afb9.tgz"
+      }
+    },
+    "startTime": "2023-02-15T06:08:34.937192635Z",
+    "status": "FAILURE",
+    "steps": [
+      {
+        "args": [
+          "build",
+          "--network",
+          "cloudbuild",
+          "--no-cache",
+          "-t",
+          "asia-east1-docker.pkg.dev//flypa-dashboard-api/flypa-dashboard-api:323514f",
+          "."
+        ],
+        "exitCode": 125,
+        "name": "gcr.io/cloud-builders/docker",
+        "pullTiming": {
+          "endTime": "2023-02-15T06:08:45.315716786Z",
+          "startTime": "2023-02-15T06:08:45.311695282Z"
+        },
+        "status": "FAILURE",
+        "timing": {
+          "endTime": "2023-02-15T06:08:47.338904417Z",
+          "startTime": "2023-02-15T06:08:45.311695282Z"
+        }
+      }
+    ],
+    "timeout": "3600s",
+    "timing": {
+      "BUILD": {
+        "endTime": "2023-02-15T06:08:47.339000040Z",
+        "startTime": "2023-02-15T06:08:44.748115225Z"
+      },
+      "FETCHSOURCE": {
+        "endTime": "2023-02-15T06:08:44.748038892Z",
+        "startTime": "2023-02-15T06:08:35.442870718Z"
+      }
+    }
+  },
+  {
+    "artifacts": {
+      "images": [
+        "asia-east1-docker.pkg.dev/flypa-tw-testing/my-repository/hello-cloudbuild:d4080a7"
+      ]
+    },
+    "createTime": "2023-02-15T02:55:07.555073105Z",
+    "finishTime": "2023-02-15T02:55:58.616484Z",
+    "id": "0acb6421-5700-4357-bbe1-d6fe76745ce6",
+    "images": [
+      "asia-east1-docker.pkg.dev/flypa-tw-testing/my-repository/hello-cloudbuild:d4080a7"
+    ],
+    "logUrl": "https://console.cloud.google.com/cloud-build/builds/0acb6421-5700-4357-bbe1-d6fe76745ce6?project=818100562173",
+    "logsBucket": "gs://818100562173.cloudbuild-logs.googleusercontent.com",
+    "name": "projects/818100562173/locations/global/builds/0acb6421-5700-4357-bbe1-d6fe76745ce6",
+    "options": {
+      "logging": "LEGACY",
+      "pool": {}
+    },
+    "projectId": "flypa-tw-testing",
+    "queueTtl": "3600s",
+    "results": {
+      "buildStepImages": [
+        "sha256:e47ccf06f182a0e869ea8fb48a134dbfea1940a274b0c06bc74c39ecfffa29e4"
+      ],
+      "buildStepOutputs": [
+        ""
+      ],
+      "images": [
+        {
+          "digest": "sha256:e36d371f951efe7eab2ee7dbf1c9992c2b0164dc923735f1f77ddfa8563477b0",
+          "name": "asia-east1-docker.pkg.dev/flypa-tw-testing/my-repository/hello-cloudbuild:d4080a7",
+          "pushTiming": {
+            "endTime": "2023-02-15T02:55:57.797795019Z",
+            "startTime": "2023-02-15T02:55:28.817912799Z"
+          }
+        }
+      ]
+    },
+    "source": {
+      "storageSource": {
+        "bucket": "flypa-tw-testing_cloudbuild",
+        "generation": "1676429707162579",
+        "object": "source/1676429706.247618-eb7294a63f4c42749e487e0f6cc7be7e.tgz"
+      }
+    },
+    "sourceProvenance": {
+      "fileHashes": {
+        "gs://flypa-tw-testing_cloudbuild/source/1676429706.247618-eb7294a63f4c42749e487e0f6cc7be7e.tgz#1676429707162579": {
+          "fileHash": [
+            {
+              "type": "MD5",
+              "value": "CcrMLwEsxbXBdWO7HN3DfA=="
+            }
+          ]
+        }
+      },
+      "resolvedStorageSource": {
+        "bucket": "flypa-tw-testing_cloudbuild",
+        "generation": "1676429707162579",
+        "object": "source/1676429706.247618-eb7294a63f4c42749e487e0f6cc7be7e.tgz"
+      }
+    },
+    "startTime": "2023-02-15T02:55:08.076738133Z",
+    "status": "SUCCESS",
+    "steps": [
+      {
+        "args": [
+          "build",
+          "--network",
+          "cloudbuild",
+          "--no-cache",
+          "-t",
+          "asia-east1-docker.pkg.dev/flypa-tw-testing/my-repository/hello-cloudbuild:d4080a7",
+          "."
+        ],
+        "name": "gcr.io/cloud-builders/docker",
+        "pullTiming": {
+          "endTime": "2023-02-15T02:55:18.733326726Z",
+          "startTime": "2023-02-15T02:55:18.729397190Z"
+        },
+        "status": "SUCCESS",
+        "timing": {
+          "endTime": "2023-02-15T02:55:28.796766621Z",
+          "startTime": "2023-02-15T02:55:18.729397190Z"
+        }
+      }
+    ],
+    "timeout": "3600s",
+    "timing": {
+      "BUILD": {
+        "endTime": "2023-02-15T02:55:28.817807477Z",
+        "startTime": "2023-02-15T02:55:18.174957952Z"
+      },
+      "FETCHSOURCE": {
+        "endTime": "2023-02-15T02:55:18.174825979Z",
+        "startTime": "2023-02-15T02:55:08.570815231Z"
+      },
+      "PUSH": {
+        "endTime": "2023-02-15T02:55:57.797837139Z",
+        "startTime": "2023-02-15T02:55:28.817911569Z"
+      }
+    }
+  },
+  {
+    "artifacts": {
+      "images": [
+        "asia-eas1t-docker.pkg.dev/flypa-tw-testing/my-repository/hello-cloudbuild:d4080a7"
+      ]
+    },
+    "createTime": "2023-02-15T02:53:41.783813572Z",
+    "finishTime": "2023-02-15T02:54:31.801616647Z",
+    "id": "08dc922e-85f5-4909-854b-1ab81f3674a4",
+    "images": [
+      "asia-eas1t-docker.pkg.dev/flypa-tw-testing/my-repository/hello-cloudbuild:d4080a7"
+    ],
+    "logUrl": "https://console.cloud.google.com/cloud-build/builds/08dc922e-85f5-4909-854b-1ab81f3674a4?project=818100562173",
+    "logsBucket": "gs://818100562173.cloudbuild-logs.googleusercontent.com",
+    "name": "projects/818100562173/locations/global/builds/08dc922e-85f5-4909-854b-1ab81f3674a4",
+    "options": {
+      "logging": "LEGACY",
+      "pool": {}
+    },
+    "projectId": "flypa-tw-testing",
+    "queueTtl": "3600s",
+    "results": {
+      "buildStepImages": [
+        "sha256:e47ccf06f182a0e869ea8fb48a134dbfea1940a274b0c06bc74c39ecfffa29e4"
+      ],
+      "buildStepOutputs": [
+        ""
+      ]
+    },
+    "source": {
+      "storageSource": {
+        "bucket": "flypa-tw-testing_cloudbuild",
+        "generation": "1676429621356001",
+        "object": "source/1676429620.062625-02304ecfc13645618909a645be4f5187.tgz"
+      }
+    },
+    "sourceProvenance": {
+      "fileHashes": {
+        "gs://flypa-tw-testing_cloudbuild/source/1676429620.062625-02304ecfc13645618909a645be4f5187.tgz#1676429621356001": {
+          "fileHash": [
+            {
+              "type": "MD5",
+              "value": "zKI6WCfEDdqK2walKpBwGw=="
+            }
+          ]
+        }
+      },
+      "resolvedStorageSource": {
+        "bucket": "flypa-tw-testing_cloudbuild",
+        "generation": "1676429621356001",
+        "object": "source/1676429620.062625-02304ecfc13645618909a645be4f5187.tgz"
+      }
+    },
+    "startTime": "2023-02-15T02:53:42.453129809Z",
+    "status": "FAILURE",
+    "steps": [
+      {
+        "args": [
+          "build",
+          "--network",
+          "cloudbuild",
+          "--no-cache",
+          "-t",
+          "asia-eas1t-docker.pkg.dev/flypa-tw-testing/my-repository/hello-cloudbuild:d4080a7",
+          "."
+        ],
+        "name": "gcr.io/cloud-builders/docker",
+        "pullTiming": {
+          "endTime": "2023-02-15T02:53:53.416234795Z",
+          "startTime": "2023-02-15T02:53:53.412542667Z"
+        },
+        "status": "SUCCESS",
+        "timing": {
+          "endTime": "2023-02-15T02:54:05.448360398Z",
+          "startTime": "2023-02-15T02:53:53.412542667Z"
+        }
+      }
+    ],
+    "timeout": "3600s",
+    "timing": {
+      "BUILD": {
+        "endTime": "2023-02-15T02:54:05.479619539Z",
+        "startTime": "2023-02-15T02:53:52.816560767Z"
+      },
+      "FETCHSOURCE": {
+        "endTime": "2023-02-15T02:53:52.816484896Z",
+        "startTime": "2023-02-15T02:53:42.962486848Z"
+      },
+      "PUSH": {
+        "endTime": "2023-02-15T02:54:31.292151670Z",
+        "startTime": "2023-02-15T02:54:05.479691013Z"
+      }
+    }
+  },
+  {
+    "artifacts": {
+      "images": [
+        "us-central1-docker.pkg.dev/flypa-tw-testing/my-repository/hello-cloudbuild:d4080a7"
+      ]
+    },
+    "createTime": "2023-02-15T02:50:41.129429455Z",
+    "failureInfo": {
+      "detail": "Docker image push failure (\"The push refers to repository [us-central1-docker.pkg.dev/flypa-tw-testing/my-repository/hello-cloudbuild]\n3808e35bb0a4: Preparing\n47b3597750eb: Preparing\n5c0d133c4a4f: Preparing\nccc3f0523c25: Preparing\n69bf6df475b3: Preparing\n74f81c76fe4c: Preparing\n36e5ac463d7d: Preparing\n4695cdfb426a: Preparing\n36e5ac463d7d: Waiting\n4695cdfb426a: Waiting\n74f81c76fe4c: Waiting\nname unknown: Repository \"my-repository\" not found\n\"): Verify that the repositor(y|ies) us-central1-docker.pkg.dev/flypa-tw-testing/my-repository/hello-cloudbuild:d4080a7 exists.",
+      "type": "PUSH_FAILED"
+    },
+    "finishTime": "2023-02-15T02:51:37.798529853Z",
+    "id": "2509eba5-3dc3-469b-86cb-7322dadfd389",
+    "images": [
+      "us-central1-docker.pkg.dev/flypa-tw-testing/my-repository/hello-cloudbuild:d4080a7"
+    ],
+    "logUrl": "https://console.cloud.google.com/cloud-build/builds/2509eba5-3dc3-469b-86cb-7322dadfd389?project=818100562173",
+    "logsBucket": "gs://818100562173.cloudbuild-logs.googleusercontent.com",
+    "name": "projects/818100562173/locations/global/builds/2509eba5-3dc3-469b-86cb-7322dadfd389",
+    "options": {
+      "logging": "LEGACY",
+      "pool": {}
+    },
+    "projectId": "flypa-tw-testing",
+    "queueTtl": "3600s",
+    "results": {
+      "buildStepImages": [
+        "sha256:e47ccf06f182a0e869ea8fb48a134dbfea1940a274b0c06bc74c39ecfffa29e4"
+      ],
+      "buildStepOutputs": [
+        ""
+      ]
+    },
+    "source": {
+      "storageSource": {
+        "bucket": "flypa-tw-testing_cloudbuild",
+        "generation": "1676429440734101",
+        "object": "source/1676429440.068122-0aa0ddcdbd174146a5d41906d83d9250.tgz"
+      }
+    },
+    "sourceProvenance": {
+      "fileHashes": {
+        "gs://flypa-tw-testing_cloudbuild/source/1676429440.068122-0aa0ddcdbd174146a5d41906d83d9250.tgz#1676429440734101": {
+          "fileHash": [
+            {
+              "type": "MD5",
+              "value": "5hStwhpv0nZNbxDcx3xDNg=="
+            }
+          ]
+        }
+      },
+      "resolvedStorageSource": {
+        "bucket": "flypa-tw-testing_cloudbuild",
+        "generation": "1676429440734101",
+        "object": "source/1676429440.068122-0aa0ddcdbd174146a5d41906d83d9250.tgz"
+      }
+    },
+    "startTime": "2023-02-15T02:50:41.773229564Z",
+    "status": "FAILURE",
+    "steps": [
+      {
+        "args": [
+          "build",
+          "--network",
+          "cloudbuild",
+          "--no-cache",
+          "-t",
+          "us-central1-docker.pkg.dev/flypa-tw-testing/my-repository/hello-cloudbuild:d4080a7",
+          "."
+        ],
+        "name": "gcr.io/cloud-builders/docker",
+        "pullTiming": {
+          "endTime": "2023-02-15T02:50:53.776669845Z",
+          "startTime": "2023-02-15T02:50:53.771593823Z"
+        },
+        "status": "SUCCESS",
+        "timing": {
+          "endTime": "2023-02-15T02:51:07.234250942Z",
+          "startTime": "2023-02-15T02:50:53.771593823Z"
+        }
+      }
+    ],
+    "timeout": "3600s",
+    "timing": {
+      "BUILD": {
+        "endTime": "2023-02-15T02:51:07.264632747Z",
+        "startTime": "2023-02-15T02:50:53.177460244Z"
+      },
+      "FETCHSOURCE": {
+        "endTime": "2023-02-15T02:50:53.177362545Z",
+        "startTime": "2023-02-15T02:50:42.495545541Z"
+      },
+      "PUSH": {
+        "endTime": "2023-02-15T02:51:37.047037856Z",
+        "startTime": "2023-02-15T02:51:07.264712260Z"
+      }
+    }
+  },
+  {
+    "artifacts": {
+      "images": [
+        "us-central1-docker.pkg.dev/flypa-tw-testing/my-repository/hello-cloudbuild:d4080a7"
+      ]
+    },
+    "createTime": "2023-02-15T02:24:22.386347110Z",
+    "failureInfo": {
+      "detail": "Docker image push failure (\"The push refers to repository [us-central1-docker.pkg.dev/flypa-tw-testing/my-repository/hello-cloudbuild]\n2dcc7419a1e1: Preparing\nb9bf62c154ff: Preparing\n6b67ad95818e: Preparing\nccc3f0523c25: Preparing\n69bf6df475b3: Preparing\n74f81c76fe4c: Preparing\n36e5ac463d7d: Preparing\n4695cdfb426a: Preparing\n74f81c76fe4c: Waiting\n36e5ac463d7d: Waiting\n4695cdfb426a: Waiting\nname unknown: Repository \"my-repository\" not found\n\"): Verify that the repositor(y|ies) us-central1-docker.pkg.dev/flypa-tw-testing/my-repository/hello-cloudbuild:d4080a7 exists.",
+      "type": "PUSH_FAILED"
+    },
+    "finishTime": "2023-02-15T02:25:09.801690138Z",
+    "id": "680ed6c9-b603-4118-a927-6152c3e8eb02",
+    "images": [
+      "us-central1-docker.pkg.dev/flypa-tw-testing/my-repository/hello-cloudbuild:d4080a7"
+    ],
+    "logUrl": "https://console.cloud.google.com/cloud-build/builds/680ed6c9-b603-4118-a927-6152c3e8eb02?project=818100562173",
+    "logsBucket": "gs://818100562173.cloudbuild-logs.googleusercontent.com",
+    "name": "projects/818100562173/locations/global/builds/680ed6c9-b603-4118-a927-6152c3e8eb02",
+    "options": {
+      "logging": "LEGACY",
+      "pool": {}
+    },
+    "projectId": "flypa-tw-testing",
+    "queueTtl": "3600s",
+    "results": {
+      "buildStepImages": [
+        "sha256:e47ccf06f182a0e869ea8fb48a134dbfea1940a274b0c06bc74c39ecfffa29e4"
+      ],
+      "buildStepOutputs": [
+        ""
+      ]
+    },
+    "source": {
+      "storageSource": {
+        "bucket": "flypa-tw-testing_cloudbuild",
+        "generation": "1676427861998131",
+        "object": "source/1676427861.192524-5e6d663ba42b409f9f7ed5d309878f13.tgz"
+      }
+    },
+    "sourceProvenance": {
+      "fileHashes": {
+        "gs://flypa-tw-testing_cloudbuild/source/1676427861.192524-5e6d663ba42b409f9f7ed5d309878f13.tgz#1676427861998131": {
+          "fileHash": [
+            {
+              "type": "MD5",
+              "value": "ybNCVPL_3r3RILNJO7aIgg=="
+            }
+          ]
+        }
+      },
+      "resolvedStorageSource": {
+        "bucket": "flypa-tw-testing_cloudbuild",
+        "generation": "1676427861998131",
+        "object": "source/1676427861.192524-5e6d663ba42b409f9f7ed5d309878f13.tgz"
+      }
+    },
+    "startTime": "2023-02-15T02:24:23.024573551Z",
+    "status": "FAILURE",
+    "steps": [
+      {
+        "args": [
+          "build",
+          "--network",
+          "cloudbuild",
+          "--no-cache",
+          "-t",
+          "us-central1-docker.pkg.dev/flypa-tw-testing/my-repository/hello-cloudbuild:d4080a7",
+          "."
+        ],
+        "name": "gcr.io/cloud-builders/docker",
+        "pullTiming": {
+          "endTime": "2023-02-15T02:24:33.400066524Z",
+          "startTime": "2023-02-15T02:24:33.396425703Z"
+        },
+        "status": "SUCCESS",
+        "timing": {
+          "endTime": "2023-02-15T02:24:44.951010125Z",
+          "startTime": "2023-02-15T02:24:33.396425703Z"
+        }
+      }
+    ],
+    "timeout": "3600s",
+    "timing": {
+      "BUILD": {
+        "endTime": "2023-02-15T02:24:44.981823762Z",
+        "startTime": "2023-02-15T02:24:32.794042273Z"
+      },
+      "FETCHSOURCE": {
+        "endTime": "2023-02-15T02:24:32.793984591Z",
+        "startTime": "2023-02-15T02:24:23.597425376Z"
+      },
+      "PUSH": {
+        "endTime": "2023-02-15T02:25:09.181515888Z",
+        "startTime": "2023-02-15T02:24:44.981913514Z"
+      }
+    }
+  },
+  {
+    "artifacts": {
+      "images": [
+        "us-central1-docker.pkg.dev/flypa-tw-testing/my-repository/hello-cloudbuild:d4080a7"
+      ]
+    },
+    "createTime": "2023-02-15T02:19:31.836883272Z",
+    "failureInfo": {
+      "detail": "Docker image push failure (\"The push refers to repository [us-central1-docker.pkg.dev/flypa-tw-testing/my-repository/hello-cloudbuild]\n0a9e4bfd28bc: Preparing\n73af218d349f: Preparing\n58bf2363ab6a: Preparing\nccc3f0523c25: Preparing\n69bf6df475b3: Preparing\n74f81c76fe4c: Preparing\n36e5ac463d7d: Preparing\n4695cdfb426a: Preparing\n74f81c76fe4c: Waiting\n36e5ac463d7d: Waiting\n4695cdfb426a: Waiting\nname unknown: Repository \"my-repository\" not found\n\"): Verify that the repositor(y|ies) us-central1-docker.pkg.dev/flypa-tw-testing/my-repository/hello-cloudbuild:d4080a7 exists.",
+      "type": "PUSH_FAILED"
+    },
+    "finishTime": "2023-02-15T02:20:15.036738035Z",
+    "id": "a4f71238-1454-4dbd-9bba-c232ef1051bd",
+    "images": [
+      "us-central1-docker.pkg.dev/flypa-tw-testing/my-repository/hello-cloudbuild:d4080a7"
+    ],
+    "logUrl": "https://console.cloud.google.com/cloud-build/builds/a4f71238-1454-4dbd-9bba-c232ef1051bd?project=818100562173",
+    "logsBucket": "gs://818100562173.cloudbuild-logs.googleusercontent.com",
+    "name": "projects/818100562173/locations/global/builds/a4f71238-1454-4dbd-9bba-c232ef1051bd",
+    "options": {
+      "logging": "LEGACY",
+      "pool": {}
+    },
+    "projectId": "flypa-tw-testing",
+    "queueTtl": "3600s",
+    "results": {
+      "buildStepImages": [
+        "sha256:e47ccf06f182a0e869ea8fb48a134dbfea1940a274b0c06bc74c39ecfffa29e4"
+      ],
+      "buildStepOutputs": [
+        ""
+      ]
+    },
+    "source": {
+      "storageSource": {
+        "bucket": "flypa-tw-testing_cloudbuild",
+        "generation": "1676427571424116",
+        "object": "source/1676427570.046581-d13e548b0ea44247bd63ef2eef0df3ea.tgz"
+      }
+    },
+    "sourceProvenance": {
+      "fileHashes": {
+        "gs://flypa-tw-testing_cloudbuild/source/1676427570.046581-d13e548b0ea44247bd63ef2eef0df3ea.tgz#1676427571424116": {
+          "fileHash": [
+            {
+              "type": "MD5",
+              "value": "XDYk2Plf7avDxkSuhlzjVw=="
+            }
+          ]
+        }
+      },
+      "resolvedStorageSource": {
+        "bucket": "flypa-tw-testing_cloudbuild",
+        "generation": "1676427571424116",
+        "object": "source/1676427570.046581-d13e548b0ea44247bd63ef2eef0df3ea.tgz"
+      }
+    },
+    "startTime": "2023-02-15T02:19:32.534349713Z",
+    "status": "FAILURE",
+    "steps": [
+      {
+        "args": [
+          "build",
+          "--network",
+          "cloudbuild",
+          "--no-cache",
+          "-t",
+          "us-central1-docker.pkg.dev/flypa-tw-testing/my-repository/hello-cloudbuild:d4080a7",
+          "."
+        ],
+        "name": "gcr.io/cloud-builders/docker",
+        "pullTiming": {
+          "endTime": "2023-02-15T02:19:43.482124305Z",
+          "startTime": "2023-02-15T02:19:43.477623988Z"
+        },
+        "status": "SUCCESS",
+        "timing": {
+          "endTime": "2023-02-15T02:19:53.909428930Z",
+          "startTime": "2023-02-15T02:19:43.477623988Z"
+        }
+      }
+    ],
+    "timeout": "3600s",
+    "timing": {
+      "BUILD": {
+        "endTime": "2023-02-15T02:19:53.933219566Z",
+        "startTime": "2023-02-15T02:19:42.936961901Z"
+      },
+      "FETCHSOURCE": {
+        "endTime": "2023-02-15T02:19:42.936906228Z",
+        "startTime": "2023-02-15T02:19:33.178861333Z"
+      },
+      "PUSH": {
+        "endTime": "2023-02-15T02:20:14.410032162Z",
+        "startTime": "2023-02-15T02:19:53.933286800Z"
+      }
+    }
+  }
+]

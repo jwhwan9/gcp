@@ -1,0 +1,1080 @@
+[
+  {
+    "apiVersion": "serving.knative.dev/v1",
+    "kind": "Service",
+    "metadata": {
+      "annotations": {
+        "client.knative.dev/user-image": "us-east1-docker.pkg.dev/gcb-release/cloud-build-notifiers/googlechat:latest",
+        "run.googleapis.com/client-name": "cloud-console",
+        "run.googleapis.com/ingress": "all",
+        "run.googleapis.com/ingress-status": "all",
+        "run.googleapis.com/operation-id": "1646852c-ad26-4920-aa5b-e3f0178a31ab",
+        "run.googleapis.com/urls": "[\"https://cloud-build-notification-818100562173.asia-east1.run.app\",\"https://cloud-build-notification-jgwm4iw2lq-de.a.run.app\"]",
+        "serving.knative.dev/creator": "courtney@flypa.com.tw",
+        "serving.knative.dev/lastModifier": "courtney@flypa.com.tw"
+      },
+      "creationTimestamp": "2023-04-30T01:39:02.957082Z",
+      "generation": 3,
+      "labels": {
+        "cloud.googleapis.com/location": "asia-east1"
+      },
+      "name": "cloud-build-notification",
+      "namespace": "818100562173",
+      "resourceVersion": "AAYCSxF5uNg",
+      "selfLink": "/apis/serving.knative.dev/v1/namespaces/818100562173/services/cloud-build-notification",
+      "uid": "8d754912-f58e-4e57-85a0-1cc628dfcd22"
+    },
+    "spec": {
+      "template": {
+        "metadata": {
+          "annotations": {
+            "autoscaling.knative.dev/maxScale": "100",
+            "client.knative.dev/user-image": "us-east1-docker.pkg.dev/gcb-release/cloud-build-notifiers/googlechat:latest",
+            "run.googleapis.com/client-name": "cloud-console"
+          },
+          "labels": {
+            "client.knative.dev/nonce": "4eb19c9a-1922-4b83-be5d-572d2ccf44ef",
+            "run.googleapis.com/startupProbeType": "Default"
+          }
+        },
+        "spec": {
+          "containerConcurrency": 80,
+          "containers": [
+            {
+              "env": [
+                {
+                  "name": "CONFIG_PATH",
+                  "value": "gs://cloud-build-notifiation/cloud-build-notification.yaml"
+                },
+                {
+                  "name": "PROJECT_ID",
+                  "value": "flypa-tw-testing"
+                }
+              ],
+              "image": "us-east1-docker.pkg.dev/gcb-release/cloud-build-notifiers/googlechat:latest",
+              "ports": [
+                {
+                  "containerPort": 8080,
+                  "name": "http1"
+                }
+              ],
+              "resources": {
+                "limits": {
+                  "cpu": "1000m",
+                  "memory": "512Mi"
+                }
+              },
+              "startupProbe": {
+                "failureThreshold": 1,
+                "periodSeconds": 240,
+                "tcpSocket": {
+                  "port": 8080
+                },
+                "timeoutSeconds": 240
+              }
+            }
+          ],
+          "serviceAccountName": "cloud-build-notification@flypa-tw-testing.iam.gserviceaccount.com",
+          "timeoutSeconds": 300
+        }
+      },
+      "traffic": [
+        {
+          "latestRevision": true,
+          "percent": 100
+        }
+      ]
+    },
+    "status": {
+      "address": {
+        "url": "https://cloud-build-notification-jgwm4iw2lq-de.a.run.app"
+      },
+      "conditions": [
+        {
+          "lastTransitionTime": "2023-08-07T01:21:39.165945Z",
+          "status": "True",
+          "type": "Ready"
+        },
+        {
+          "lastTransitionTime": "2023-08-07T01:21:22.225587Z",
+          "status": "True",
+          "type": "ConfigurationsReady"
+        },
+        {
+          "lastTransitionTime": "2023-08-07T01:21:39.256536Z",
+          "status": "True",
+          "type": "RoutesReady"
+        }
+      ],
+      "latestCreatedRevisionName": "cloud-build-notification-00003-gmd",
+      "latestReadyRevisionName": "cloud-build-notification-00003-gmd",
+      "observedGeneration": 3,
+      "traffic": [
+        {
+          "latestRevision": true,
+          "percent": 100,
+          "revisionName": "cloud-build-notification-00003-gmd"
+        }
+      ],
+      "url": "https://cloud-build-notification-jgwm4iw2lq-de.a.run.app"
+    }
+  },
+  {
+    "apiVersion": "serving.knative.dev/v1",
+    "kind": "Service",
+    "metadata": {
+      "annotations": {
+        "run.googleapis.com/client-name": "gcloud",
+        "run.googleapis.com/client-version": "488.0.0",
+        "run.googleapis.com/ingress": "all",
+        "run.googleapis.com/ingress-status": "all",
+        "run.googleapis.com/operation-id": "d6ff3dfe-aac9-46af-9c3c-074fb627f01e",
+        "run.googleapis.com/urls": "[\"https://cola-home-818100562173.asia-east1.run.app\",\"https://cola-home-jgwm4iw2lq-de.a.run.app\"]",
+        "serving.knative.dev/creator": "818100562173@cloudbuild.gserviceaccount.com",
+        "serving.knative.dev/lastModifier": "818100562173@cloudbuild.gserviceaccount.com"
+      },
+      "creationTimestamp": "2024-07-08T02:48:47.694026Z",
+      "generation": 11,
+      "labels": {
+        "cloud.googleapis.com/location": "asia-east1"
+      },
+      "name": "cola-home",
+      "namespace": "818100562173",
+      "resourceVersion": "AAYgVrkCcKA",
+      "selfLink": "/apis/serving.knative.dev/v1/namespaces/818100562173/services/cola-home",
+      "uid": "6197932f-5459-4c45-8ce2-109a93ddc049"
+    },
+    "spec": {
+      "template": {
+        "metadata": {
+          "annotations": {
+            "autoscaling.knative.dev/maxScale": "100",
+            "run.googleapis.com/client-name": "gcloud",
+            "run.googleapis.com/client-version": "488.0.0",
+            "run.googleapis.com/network-interfaces": "[{\"network\":\"flypa-tw-testing-vpc\",\"subnetwork\":\"flypa-tw-testing-vpc-network\"}]",
+            "run.googleapis.com/startup-cpu-boost": "true",
+            "run.googleapis.com/vpc-access-egress": "private-ranges-only"
+          },
+          "labels": {
+            "client.knative.dev/nonce": "fiunxbmlfi",
+            "run.googleapis.com/startupProbeType": "Default"
+          }
+        },
+        "spec": {
+          "containerConcurrency": 80,
+          "containers": [
+            {
+              "env": [
+                {
+                  "name": "NODE_ENV",
+                  "value": "development"
+                },
+                {
+                  "name": "HOST",
+                  "value": "0.0.0.0"
+                }
+              ],
+              "image": "asia-east1-docker.pkg.dev/flypa-tw-testing/flypa-gke-demo/cola-home:f9dab3158b39e95e5a37e4dc5f81804aabd8c129",
+              "name": "cola-home-1",
+              "ports": [
+                {
+                  "containerPort": 8080,
+                  "name": "http1"
+                }
+              ],
+              "resources": {
+                "limits": {
+                  "cpu": "1000m",
+                  "memory": "512Mi"
+                }
+              },
+              "startupProbe": {
+                "failureThreshold": 1,
+                "periodSeconds": 240,
+                "tcpSocket": {
+                  "port": 8080
+                },
+                "timeoutSeconds": 240
+              }
+            }
+          ],
+          "serviceAccountName": "818100562173-compute@developer.gserviceaccount.com",
+          "timeoutSeconds": 300
+        }
+      },
+      "traffic": [
+        {
+          "latestRevision": true,
+          "percent": 100
+        }
+      ]
+    },
+    "status": {
+      "address": {
+        "url": "https://cola-home-jgwm4iw2lq-de.a.run.app"
+      },
+      "conditions": [
+        {
+          "lastTransitionTime": "2024-08-23T09:51:43.485088Z",
+          "status": "True",
+          "type": "Ready"
+        },
+        {
+          "lastTransitionTime": "2024-07-08T02:48:47.759242Z",
+          "status": "True",
+          "type": "ConfigurationsReady"
+        },
+        {
+          "lastTransitionTime": "2024-08-23T09:51:43.459791Z",
+          "status": "True",
+          "type": "RoutesReady"
+        }
+      ],
+      "latestCreatedRevisionName": "cola-home-00011-k6l",
+      "latestReadyRevisionName": "cola-home-00011-k6l",
+      "observedGeneration": 11,
+      "traffic": [
+        {
+          "latestRevision": true,
+          "percent": 100,
+          "revisionName": "cola-home-00011-k6l"
+        }
+      ],
+      "url": "https://cola-home-jgwm4iw2lq-de.a.run.app"
+    }
+  },
+  {
+    "apiVersion": "serving.knative.dev/v1",
+    "kind": "Service",
+    "metadata": {
+      "annotations": {
+        "run.googleapis.com/client-name": "gcloud",
+        "run.googleapis.com/client-version": "487.0.0",
+        "run.googleapis.com/ingress": "all",
+        "run.googleapis.com/ingress-status": "all",
+        "run.googleapis.com/operation-id": "8c40b341-93fb-466c-85b0-977c66b3ca75",
+        "run.googleapis.com/urls": "[\"https://cola-itinerary-818100562173.asia-east1.run.app\",\"https://cola-itinerary-jgwm4iw2lq-de.a.run.app\"]",
+        "serving.knative.dev/creator": "818100562173@cloudbuild.gserviceaccount.com",
+        "serving.knative.dev/lastModifier": "818100562173@cloudbuild.gserviceaccount.com"
+      },
+      "creationTimestamp": "2024-05-03T04:37:00.281203Z",
+      "generation": 56,
+      "labels": {
+        "cloud.googleapis.com/location": "asia-east1"
+      },
+      "name": "cola-itinerary",
+      "namespace": "818100562173",
+      "resourceVersion": "AAYgPCWPg4U",
+      "selfLink": "/apis/serving.knative.dev/v1/namespaces/818100562173/services/cola-itinerary",
+      "uid": "73d94a2b-e53a-4b07-a6df-dc53d5a9ec90"
+    },
+    "spec": {
+      "template": {
+        "metadata": {
+          "annotations": {
+            "autoscaling.knative.dev/maxScale": "5",
+            "run.googleapis.com/client-name": "gcloud",
+            "run.googleapis.com/client-version": "487.0.0",
+            "run.googleapis.com/network-interfaces": "[{\"network\":\"flypa-tw-testing-vpc\",\"subnetwork\":\"flypa-tw-testing-vpc-network\",\"tags\":[\"cola-itinerary\"]}]",
+            "run.googleapis.com/startup-cpu-boost": "true",
+            "run.googleapis.com/vpc-access-egress": "all-traffic"
+          },
+          "labels": {
+            "client.knative.dev/nonce": "jnfqkzhqzz",
+            "run.googleapis.com/startupProbeType": "Default"
+          }
+        },
+        "spec": {
+          "containerConcurrency": 80,
+          "containers": [
+            {
+              "env": [
+                {
+                  "name": "NODE_ENV",
+                  "value": "development"
+                },
+                {
+                  "name": "HOST",
+                  "value": "0.0.0.0"
+                }
+              ],
+              "image": "asia-east1-docker.pkg.dev/flypa-tw-testing/flypa-gke-demo/cola-itinerary:f3e591058e3e7923d6bfaf5c51c7d8e0a187f217",
+              "name": "cola-itinerary-1",
+              "ports": [
+                {
+                  "containerPort": 3000,
+                  "name": "http1"
+                }
+              ],
+              "resources": {
+                "limits": {
+                  "cpu": "1000m",
+                  "memory": "512Mi"
+                }
+              },
+              "startupProbe": {
+                "failureThreshold": 1,
+                "periodSeconds": 240,
+                "tcpSocket": {
+                  "port": 3000
+                },
+                "timeoutSeconds": 240
+              }
+            }
+          ],
+          "serviceAccountName": "cola-itinerary@flypa-tw-testing.iam.gserviceaccount.com",
+          "timeoutSeconds": 300
+        }
+      },
+      "traffic": [
+        {
+          "revisionName": "cola-itinerary-00027-8wm",
+          "tag": "green"
+        },
+        {
+          "latestRevision": true,
+          "percent": 100
+        }
+      ]
+    },
+    "status": {
+      "address": {
+        "url": "https://cola-itinerary-jgwm4iw2lq-de.a.run.app"
+      },
+      "conditions": [
+        {
+          "lastTransitionTime": "2024-08-22T02:09:20.552837Z",
+          "status": "True",
+          "type": "Ready"
+        },
+        {
+          "lastTransitionTime": "2024-05-03T04:37:00.386070Z",
+          "status": "True",
+          "type": "ConfigurationsReady"
+        },
+        {
+          "lastTransitionTime": "2024-08-22T02:09:20.522755Z",
+          "status": "True",
+          "type": "RoutesReady"
+        }
+      ],
+      "latestCreatedRevisionName": "cola-itinerary-00055-7lj",
+      "latestReadyRevisionName": "cola-itinerary-00055-7lj",
+      "observedGeneration": 56,
+      "traffic": [
+        {
+          "revisionName": "cola-itinerary-00027-8wm",
+          "tag": "green",
+          "url": "https://green---cola-itinerary-jgwm4iw2lq-de.a.run.app"
+        },
+        {
+          "latestRevision": true,
+          "percent": 100,
+          "revisionName": "cola-itinerary-00055-7lj"
+        }
+      ],
+      "url": "https://cola-itinerary-jgwm4iw2lq-de.a.run.app"
+    }
+  },
+  {
+    "apiVersion": "serving.knative.dev/v1",
+    "kind": "Service",
+    "metadata": {
+      "annotations": {
+        "run.googleapis.com/client-name": "gcloud",
+        "run.googleapis.com/client-version": "484.0.0",
+        "run.googleapis.com/ingress": "all",
+        "run.googleapis.com/ingress-status": "all",
+        "run.googleapis.com/operation-id": "1a4c5166-a73e-47a0-bb3c-ae136db5221d",
+        "run.googleapis.com/urls": "[\"https://cola-itinerary-test-818100562173.asia-east1.run.app\",\"https://cola-itinerary-test-jgwm4iw2lq-de.a.run.app\"]",
+        "serving.knative.dev/creator": "818100562173@cloudbuild.gserviceaccount.com",
+        "serving.knative.dev/lastModifier": "818100562173@cloudbuild.gserviceaccount.com"
+      },
+      "creationTimestamp": "2024-07-31T03:38:54.527513Z",
+      "generation": 5,
+      "labels": {
+        "cloud.googleapis.com/location": "asia-east1"
+      },
+      "name": "cola-itinerary-test",
+      "namespace": "818100562173",
+      "resourceVersion": "AAYeg2Zhog0",
+      "selfLink": "/apis/serving.knative.dev/v1/namespaces/818100562173/services/cola-itinerary-test",
+      "uid": "c3e1d98f-d4b5-4efc-a642-f2c2bdf7bc21"
+    },
+    "spec": {
+      "template": {
+        "metadata": {
+          "annotations": {
+            "autoscaling.knative.dev/maxScale": "100",
+            "run.googleapis.com/client-name": "gcloud",
+            "run.googleapis.com/client-version": "484.0.0",
+            "run.googleapis.com/startup-cpu-boost": "true"
+          },
+          "labels": {
+            "client.knative.dev/nonce": "nshfwjpfjp",
+            "run.googleapis.com/startupProbeType": "Default"
+          }
+        },
+        "spec": {
+          "containerConcurrency": 80,
+          "containers": [
+            {
+              "env": [
+                {
+                  "name": "NODE_ENV",
+                  "value": "development"
+                },
+                {
+                  "name": "HOST",
+                  "value": "0.0.0.0"
+                }
+              ],
+              "image": "asia-east1-docker.pkg.dev/flypa-tw-testing/flypa-gke-demo/cola-itinerary-test:a6875caf0897eeaafc20af480db3077007216983",
+              "ports": [
+                {
+                  "containerPort": 8080,
+                  "name": "http1"
+                }
+              ],
+              "resources": {
+                "limits": {
+                  "cpu": "1000m",
+                  "memory": "512Mi"
+                }
+              },
+              "startupProbe": {
+                "failureThreshold": 1,
+                "periodSeconds": 240,
+                "tcpSocket": {
+                  "port": 8080
+                },
+                "timeoutSeconds": 240
+              }
+            }
+          ],
+          "serviceAccountName": "818100562173-compute@developer.gserviceaccount.com",
+          "timeoutSeconds": 300
+        }
+      },
+      "traffic": [
+        {
+          "latestRevision": true,
+          "percent": 100
+        }
+      ]
+    },
+    "status": {
+      "address": {
+        "url": "https://cola-itinerary-test-jgwm4iw2lq-de.a.run.app"
+      },
+      "conditions": [
+        {
+          "lastTransitionTime": "2024-07-31T04:19:27.487501Z",
+          "status": "True",
+          "type": "Ready"
+        },
+        {
+          "lastTransitionTime": "2024-07-31T03:38:54.640227Z",
+          "status": "True",
+          "type": "ConfigurationsReady"
+        },
+        {
+          "lastTransitionTime": "2024-07-31T04:19:27.459018Z",
+          "status": "True",
+          "type": "RoutesReady"
+        }
+      ],
+      "latestCreatedRevisionName": "cola-itinerary-test-00005-j6f",
+      "latestReadyRevisionName": "cola-itinerary-test-00005-j6f",
+      "observedGeneration": 5,
+      "traffic": [
+        {
+          "latestRevision": true,
+          "percent": 100,
+          "revisionName": "cola-itinerary-test-00005-j6f"
+        }
+      ],
+      "url": "https://cola-itinerary-test-jgwm4iw2lq-de.a.run.app"
+    }
+  },
+  {
+    "apiVersion": "serving.knative.dev/v1",
+    "kind": "Service",
+    "metadata": {
+      "annotations": {
+        "run.googleapis.com/client-name": "gcloud",
+        "run.googleapis.com/client-version": "485.0.0",
+        "run.googleapis.com/ingress": "all",
+        "run.googleapis.com/ingress-status": "all",
+        "run.googleapis.com/operation-id": "19b8d06a-86a8-4dc3-8bf8-b770d0cdeeaa",
+        "run.googleapis.com/urls": "[\"https://crispy-chicken-backend-818100562173.asia-east1.run.app\",\"https://crispy-chicken-backend-jgwm4iw2lq-de.a.run.app\"]",
+        "serving.knative.dev/creator": "818100562173@cloudbuild.gserviceaccount.com",
+        "serving.knative.dev/lastModifier": "818100562173@cloudbuild.gserviceaccount.com"
+      },
+      "creationTimestamp": "2024-01-24T01:38:30.887862Z",
+      "generation": 104,
+      "labels": {
+        "cloud.googleapis.com/location": "asia-east1"
+      },
+      "name": "crispy-chicken-backend",
+      "namespace": "818100562173",
+      "resourceVersion": "AAYfEFK8kr0",
+      "selfLink": "/apis/serving.knative.dev/v1/namespaces/818100562173/services/crispy-chicken-backend",
+      "uid": "7f673339-84d0-4aec-a1c3-e64f5d94b5b1"
+    },
+    "spec": {
+      "template": {
+        "metadata": {
+          "annotations": {
+            "autoscaling.knative.dev/maxScale": "5",
+            "run.googleapis.com/client-name": "gcloud",
+            "run.googleapis.com/client-version": "485.0.0",
+            "run.googleapis.com/cloudsql-instances": "flypa-tw-testing:asia-east1:flypa-tw-testing-postgres",
+            "run.googleapis.com/network-interfaces": "[{\"network\":\"flypa-tw-testing-vpc\",\"subnetwork\":\"flypa-tw-testing-vpc-network\"}]",
+            "run.googleapis.com/startup-cpu-boost": "true",
+            "run.googleapis.com/vpc-access-egress": "all-traffic"
+          },
+          "labels": {
+            "client.knative.dev/nonce": "tmkjpsklvi",
+            "run.googleapis.com/startupProbeType": "Default"
+          }
+        },
+        "spec": {
+          "containerConcurrency": 80,
+          "containers": [
+            {
+              "env": [
+                {
+                  "name": "DB_USER",
+                  "valueFrom": {
+                    "secretKeyRef": {
+                      "key": "latest",
+                      "name": "DB_USER"
+                    }
+                  }
+                },
+                {
+                  "name": "DB_PASS",
+                  "valueFrom": {
+                    "secretKeyRef": {
+                      "key": "latest",
+                      "name": "DB_PASS"
+                    }
+                  }
+                },
+                {
+                  "name": "GOOGLE_MAIL_USER",
+                  "valueFrom": {
+                    "secretKeyRef": {
+                      "key": "latest",
+                      "name": "GOOGLE_MAIL_USER"
+                    }
+                  }
+                },
+                {
+                  "name": "GOOGLE_MAIL_PASS",
+                  "valueFrom": {
+                    "secretKeyRef": {
+                      "key": "latest",
+                      "name": "GOOGLE_MAIL_PASS"
+                    }
+                  }
+                },
+                {
+                  "name": "NODE_ENV",
+                  "value": "development"
+                },
+                {
+                  "name": "DB_NAME",
+                  "value": "flypa"
+                },
+                {
+                  "name": "INSTANCE_CONNECTION_NAME",
+                  "value": "flypa-tw-testing:asia-east1:flypa-tw-testing-postgres"
+                },
+                {
+                  "name": "SENTRY_DSN",
+                  "value": "https://6795ae711fad0509cafcd3e9aef40143@o4506557212721152.ingest.us.sentry.io/4507371234066432"
+                }
+              ],
+              "image": "asia-east1-docker.pkg.dev/flypa-tw-testing/flypa-gke-demo/crispy-chicken-backend:e8d0a9412ca8bfe0923b6dcf006b4dfa2b012852",
+              "livenessProbe": {
+                "failureThreshold": 3,
+                "httpGet": {
+                  "path": "/health",
+                  "port": 8080
+                },
+                "periodSeconds": 10,
+                "timeoutSeconds": 1
+              },
+              "name": "crispy-chicken-backend-1",
+              "ports": [
+                {
+                  "containerPort": 8080,
+                  "name": "http1"
+                }
+              ],
+              "resources": {
+                "limits": {
+                  "cpu": "1000m",
+                  "memory": "512Mi"
+                }
+              },
+              "startupProbe": {
+                "failureThreshold": 1,
+                "periodSeconds": 240,
+                "tcpSocket": {
+                  "port": 8080
+                },
+                "timeoutSeconds": 240
+              }
+            }
+          ],
+          "serviceAccountName": "crispy-chicken-backend@flypa-tw-testing.iam.gserviceaccount.com",
+          "timeoutSeconds": 300
+        }
+      },
+      "traffic": [
+        {
+          "latestRevision": true,
+          "percent": 100
+        }
+      ]
+    },
+    "status": {
+      "address": {
+        "url": "https://crispy-chicken-backend-jgwm4iw2lq-de.a.run.app"
+      },
+      "conditions": [
+        {
+          "lastTransitionTime": "2024-08-07T04:27:08.291773Z",
+          "status": "True",
+          "type": "Ready"
+        },
+        {
+          "lastTransitionTime": "2024-01-24T01:38:30.982634Z",
+          "status": "True",
+          "type": "ConfigurationsReady"
+        },
+        {
+          "lastTransitionTime": "2024-08-07T04:27:08.267363Z",
+          "status": "True",
+          "type": "RoutesReady"
+        }
+      ],
+      "latestCreatedRevisionName": "crispy-chicken-backend-00104-z2p",
+      "latestReadyRevisionName": "crispy-chicken-backend-00104-z2p",
+      "observedGeneration": 104,
+      "traffic": [
+        {
+          "latestRevision": true,
+          "percent": 100,
+          "revisionName": "crispy-chicken-backend-00104-z2p"
+        }
+      ],
+      "url": "https://crispy-chicken-backend-jgwm4iw2lq-de.a.run.app"
+    }
+  },
+  {
+    "apiVersion": "serving.knative.dev/v1",
+    "kind": "Service",
+    "metadata": {
+      "annotations": {
+        "run.googleapis.com/client-name": "gcloud",
+        "run.googleapis.com/client-version": "485.0.0",
+        "run.googleapis.com/ingress": "all",
+        "run.googleapis.com/ingress-status": "all",
+        "run.googleapis.com/operation-id": "150355a3-853a-4a38-baf3-b0420befc112",
+        "run.googleapis.com/urls": "[\"https://crispy-chicken-web-818100562173.asia-east1.run.app\",\"https://crispy-chicken-web-jgwm4iw2lq-de.a.run.app\"]",
+        "serving.knative.dev/creator": "818100562173@cloudbuild.gserviceaccount.com",
+        "serving.knative.dev/lastModifier": "818100562173@cloudbuild.gserviceaccount.com"
+      },
+      "creationTimestamp": "2024-01-24T01:16:47.504647Z",
+      "generation": 114,
+      "labels": {
+        "cloud.googleapis.com/location": "asia-east1"
+      },
+      "name": "crispy-chicken-web",
+      "namespace": "818100562173",
+      "resourceVersion": "AAYe6ZokCeA",
+      "selfLink": "/apis/serving.knative.dev/v1/namespaces/818100562173/services/crispy-chicken-web",
+      "uid": "3a75a3a8-8265-469a-a46c-44d502839f35"
+    },
+    "spec": {
+      "template": {
+        "metadata": {
+          "annotations": {
+            "autoscaling.knative.dev/maxScale": "5",
+            "run.googleapis.com/client-name": "gcloud",
+            "run.googleapis.com/client-version": "485.0.0",
+            "run.googleapis.com/startup-cpu-boost": "true"
+          },
+          "labels": {
+            "client.knative.dev/nonce": "jucalsqoam",
+            "run.googleapis.com/startupProbeType": "Default"
+          }
+        },
+        "spec": {
+          "containerConcurrency": 80,
+          "containers": [
+            {
+              "env": [
+                {
+                  "name": "NODE_ENV",
+                  "value": "development"
+                },
+                {
+                  "name": "HOST",
+                  "value": "0.0.0.0"
+                }
+              ],
+              "image": "asia-east1-docker.pkg.dev/flypa-tw-testing/flypa-gke-demo/crispy-chicken-web:a6c4608db396fd6d5d2e63288c3e7d08aa9226da",
+              "livenessProbe": {
+                "failureThreshold": 3,
+                "httpGet": {
+                  "path": "/",
+                  "port": 8888
+                },
+                "periodSeconds": 10,
+                "timeoutSeconds": 1
+              },
+              "name": "crispy-chicken-web-1",
+              "ports": [
+                {
+                  "containerPort": 8888,
+                  "name": "http1"
+                }
+              ],
+              "resources": {
+                "limits": {
+                  "cpu": "1000m",
+                  "memory": "512Mi"
+                }
+              },
+              "startupProbe": {
+                "failureThreshold": 1,
+                "periodSeconds": 240,
+                "tcpSocket": {
+                  "port": 8888
+                },
+                "timeoutSeconds": 240
+              }
+            }
+          ],
+          "serviceAccountName": "crispy-chicken-web@flypa-tw-testing.iam.gserviceaccount.com",
+          "timeoutSeconds": 300
+        }
+      },
+      "traffic": [
+        {
+          "latestRevision": true,
+          "percent": 100
+        }
+      ]
+    },
+    "status": {
+      "address": {
+        "url": "https://crispy-chicken-web-jgwm4iw2lq-de.a.run.app"
+      },
+      "conditions": [
+        {
+          "lastTransitionTime": "2024-08-05T06:15:22.530272Z",
+          "status": "True",
+          "type": "Ready"
+        },
+        {
+          "lastTransitionTime": "2024-01-24T01:16:47.607781Z",
+          "status": "True",
+          "type": "ConfigurationsReady"
+        },
+        {
+          "lastTransitionTime": "2024-08-05T06:15:22.504148Z",
+          "status": "True",
+          "type": "RoutesReady"
+        }
+      ],
+      "latestCreatedRevisionName": "crispy-chicken-web-00114-8ts",
+      "latestReadyRevisionName": "crispy-chicken-web-00114-8ts",
+      "observedGeneration": 114,
+      "traffic": [
+        {
+          "latestRevision": true,
+          "percent": 100,
+          "revisionName": "crispy-chicken-web-00114-8ts"
+        }
+      ],
+      "url": "https://crispy-chicken-web-jgwm4iw2lq-de.a.run.app"
+    }
+  },
+  {
+    "apiVersion": "serving.knative.dev/v1",
+    "kind": "Service",
+    "metadata": {
+      "annotations": {
+        "run.googleapis.com/client-name": "cloud-console",
+        "run.googleapis.com/ingress": "all",
+        "run.googleapis.com/ingress-status": "all",
+        "run.googleapis.com/operation-id": "27eadecd-927a-466d-986d-4889e40930b4",
+        "run.googleapis.com/urls": "[\"https://domanda-backend-818100562173.asia-east1.run.app\",\"https://domanda-backend-jgwm4iw2lq-de.a.run.app\"]",
+        "serving.knative.dev/creator": "818100562173@cloudbuild.gserviceaccount.com",
+        "serving.knative.dev/lastModifier": "courtney@flypa.com.tw"
+      },
+      "creationTimestamp": "2024-06-27T00:38:47.369455Z",
+      "generation": 22,
+      "labels": {
+        "cloud.googleapis.com/location": "asia-east1"
+      },
+      "name": "domanda-backend",
+      "namespace": "818100562173",
+      "resourceVersion": "AAYgQmxgw3M",
+      "selfLink": "/apis/serving.knative.dev/v1/namespaces/818100562173/services/domanda-backend",
+      "uid": "13fdfe1e-cee8-4b45-a0ca-60cc93b77e1f"
+    },
+    "spec": {
+      "template": {
+        "metadata": {
+          "annotations": {
+            "autoscaling.knative.dev/maxScale": "3",
+            "run.googleapis.com/client-name": "gcloud",
+            "run.googleapis.com/client-version": "487.0.0",
+            "run.googleapis.com/cloudsql-instances": "flypa-tw-testing:asia-east1:flypa-tw-testing-postgres",
+            "run.googleapis.com/network-interfaces": "[{\"network\":\"flypa-tw-testing-vpc\",\"subnetwork\":\"flypa-tw-testing-vpc-network\"}]",
+            "run.googleapis.com/startup-cpu-boost": "true",
+            "run.googleapis.com/vpc-access-egress": "all-traffic"
+          },
+          "labels": {
+            "client.knative.dev/nonce": "ylpzqvbzem",
+            "run.googleapis.com/startupProbeType": "Default"
+          }
+        },
+        "spec": {
+          "containerConcurrency": 80,
+          "containers": [
+            {
+              "env": [
+                {
+                  "name": "DB_USER",
+                  "valueFrom": {
+                    "secretKeyRef": {
+                      "key": "latest",
+                      "name": "DB_USER"
+                    }
+                  }
+                },
+                {
+                  "name": "DB_PASS",
+                  "valueFrom": {
+                    "secretKeyRef": {
+                      "key": "latest",
+                      "name": "DB_PASS"
+                    }
+                  }
+                },
+                {
+                  "name": "NODE_ENV",
+                  "value": "development"
+                },
+                {
+                  "name": "DB_NAME",
+                  "value": "flypa"
+                },
+                {
+                  "name": "INSTANCE_CONNECTION_NAME",
+                  "value": "flypa-tw-testing:asia-east1:flypa-tw-testing-postgres"
+                },
+                {
+                  "name": "SENTRY_DSN",
+                  "value": "null"
+                }
+              ],
+              "image": "asia-east1-docker.pkg.dev/flypa-tw-testing/flypa-gke-demo/domanda-backend:ddb79f35d1a5156c998d5e18726c6b59d8453e80",
+              "name": "domanda-backend-1",
+              "ports": [
+                {
+                  "containerPort": 8080,
+                  "name": "http1"
+                }
+              ],
+              "resources": {
+                "limits": {
+                  "cpu": "1000m",
+                  "memory": "512Mi"
+                }
+              },
+              "startupProbe": {
+                "failureThreshold": 1,
+                "periodSeconds": 240,
+                "tcpSocket": {
+                  "port": 8080
+                },
+                "timeoutSeconds": 240
+              }
+            }
+          ],
+          "serviceAccountName": "domanda-backend@flypa-tw-testing.iam.gserviceaccount.com",
+          "timeoutSeconds": 300
+        }
+      },
+      "traffic": [
+        {
+          "latestRevision": true,
+          "percent": 100
+        }
+      ]
+    },
+    "status": {
+      "address": {
+        "url": "https://domanda-backend-jgwm4iw2lq-de.a.run.app"
+      },
+      "conditions": [
+        {
+          "lastTransitionTime": "2024-08-22T09:38:38.475123Z",
+          "status": "True",
+          "type": "Ready"
+        },
+        {
+          "lastTransitionTime": "2024-06-27T00:38:47.440063Z",
+          "status": "True",
+          "type": "ConfigurationsReady"
+        },
+        {
+          "lastTransitionTime": "2024-08-22T09:38:38.452370Z",
+          "status": "True",
+          "type": "RoutesReady"
+        }
+      ],
+      "latestCreatedRevisionName": "domanda-backend-00019-d2q",
+      "latestReadyRevisionName": "domanda-backend-00019-d2q",
+      "observedGeneration": 22,
+      "traffic": [
+        {
+          "latestRevision": true,
+          "percent": 100,
+          "revisionName": "domanda-backend-00019-d2q"
+        }
+      ],
+      "url": "https://domanda-backend-jgwm4iw2lq-de.a.run.app"
+    }
+  },
+  {
+    "apiVersion": "serving.knative.dev/v1",
+    "kind": "Service",
+    "metadata": {
+      "annotations": {
+        "run.googleapis.com/client-name": "gcloud",
+        "run.googleapis.com/client-version": "488.0.0",
+        "run.googleapis.com/ingress": "all",
+        "run.googleapis.com/ingress-status": "all",
+        "run.googleapis.com/operation-id": "1f215639-311f-435e-9c8c-77263854a8f4",
+        "run.googleapis.com/urls": "[\"https://ticket-parity-818100562173.asia-east1.run.app\",\"https://ticket-parity-jgwm4iw2lq-de.a.run.app\"]",
+        "serving.knative.dev/creator": "818100562173@cloudbuild.gserviceaccount.com",
+        "serving.knative.dev/lastModifier": "818100562173@cloudbuild.gserviceaccount.com"
+      },
+      "creationTimestamp": "2024-06-20T01:49:35.563915Z",
+      "generation": 23,
+      "labels": {
+        "cloud.googleapis.com/location": "asia-east1"
+      },
+      "name": "ticket-parity",
+      "namespace": "818100562173",
+      "resourceVersion": "AAYgT+CAf2U",
+      "selfLink": "/apis/serving.knative.dev/v1/namespaces/818100562173/services/ticket-parity",
+      "uid": "ce274497-59a8-4531-9f3d-a944b3c9453d"
+    },
+    "spec": {
+      "template": {
+        "metadata": {
+          "annotations": {
+            "autoscaling.knative.dev/maxScale": "100",
+            "run.googleapis.com/client-name": "gcloud",
+            "run.googleapis.com/client-version": "488.0.0",
+            "run.googleapis.com/startup-cpu-boost": "true"
+          },
+          "labels": {
+            "client.knative.dev/nonce": "gvuvseddhw",
+            "run.googleapis.com/startupProbeType": "Default"
+          }
+        },
+        "spec": {
+          "containerConcurrency": 80,
+          "containers": [
+            {
+              "env": [
+                {
+                  "name": "NODE_ENV",
+                  "value": "development"
+                },
+                {
+                  "name": "HOST",
+                  "value": "0.0.0.0"
+                }
+              ],
+              "image": "asia-east1-docker.pkg.dev/flypa-tw-testing/flypa-gke-demo/ticket-parity:c3149ffe732bcd36d56fca15d442e2ca5cb1bd39",
+              "ports": [
+                {
+                  "containerPort": 8080,
+                  "name": "http1"
+                }
+              ],
+              "resources": {
+                "limits": {
+                  "cpu": "1000m",
+                  "memory": "512Mi"
+                }
+              },
+              "startupProbe": {
+                "failureThreshold": 1,
+                "periodSeconds": 240,
+                "tcpSocket": {
+                  "port": 8080
+                },
+                "timeoutSeconds": 240
+              }
+            }
+          ],
+          "serviceAccountName": "818100562173-compute@developer.gserviceaccount.com",
+          "timeoutSeconds": 300
+        }
+      },
+      "traffic": [
+        {
+          "latestRevision": true,
+          "percent": 100
+        }
+      ]
+    },
+    "status": {
+      "address": {
+        "url": "https://ticket-parity-jgwm4iw2lq-de.a.run.app"
+      },
+      "conditions": [
+        {
+          "lastTransitionTime": "2024-08-23T01:41:41.286757Z",
+          "status": "True",
+          "type": "Ready"
+        },
+        {
+          "lastTransitionTime": "2024-06-20T01:49:35.650100Z",
+          "status": "True",
+          "type": "ConfigurationsReady"
+        },
+        {
+          "lastTransitionTime": "2024-08-23T01:41:41.260332Z",
+          "status": "True",
+          "type": "RoutesReady"
+        }
+      ],
+      "latestCreatedRevisionName": "ticket-parity-00023-l6r",
+      "latestReadyRevisionName": "ticket-parity-00023-l6r",
+      "observedGeneration": 23,
+      "traffic": [
+        {
+          "latestRevision": true,
+          "percent": 100,
+          "revisionName": "ticket-parity-00023-l6r"
+        }
+      ],
+      "url": "https://ticket-parity-jgwm4iw2lq-de.a.run.app"
+    }
+  }
+]
